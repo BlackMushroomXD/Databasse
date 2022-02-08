@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Historie</title>
+	<link rel="stylesheet" href="velkavalka.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<link rel="icon" href ="icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header class="hlava">
+<!-- Menu pro mobil -->
+	<div class="kolaps">
+			<div class="mobilmenu"> 
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+			</div>		
+	</div>	
+	<div class="kolapsmenu">
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="historie.html">Historie</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="kolaps">
+				<div class="col-md-12 kolapsnabid">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html">Fotogalerie</a>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("kolaps");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  	  coll[i].addEventListener("click", function() {
+  	 	this.classList.toggle("active");
+    	var kolapsmenu = this.nextElementSibling;
+    	if (kolapsmenu.style.maxHeight){
+      	  kolapsmenu.style.maxHeight = null;
+   	 	} else {
+     	  kolapsmenu.style.maxHeight = kolapsmenu.scrollHeight + "px";
+   		}
+ 	  });
+	}
+	</script>
+
+	<!-- Ikona -->
+	<div class="container">
+		<div class="mobilicon">
+			<a href="index.html">	
+				<img src="icon.png">
+			</a>
+		</div>
+	
+
+	<!-- Header pro PC -->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="historie.html">Historie</a>
+				</li>
+				<li>
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+				</li>
+				<li class="drpdwn">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
+						<div class="drpdwn-menu">
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
+						</div>
+				</li>
+				<li class="prihlaseni">
+					<a href="prihlaseni.html">Přihlášení</a>
+				</li>
+			</ul>
+		</div>
+	</div>		
+</header>
+
+<section>
+	<!-- Obrázek pro mobily -->
+	<div class="historie-obr-maly"></div>
+	<!-- Obrázek pro větší obrazovky -->
+	<div class="historie-obr-velky"></div>
+</section>
+
+<section>
+	<!-- Hlavní sekce -->
+	<div class="mainsection pt-3">
+		<div class="container">
+			<h4 style="color: white;">1. světová válka</h4>
+			<h5>První válečný rok 1914</h5>
+			<p><strong>Stručný souhrn</strong></p>
+
+			<p>Za začátek Války je považován 28. červenec 1914, kdy Rakousko-Uhersko vyhlásilo válku Srbsku a vznikla <strong>Srbská fronta</strong>. I přes úpornou snahu Rakouska-Uherska se mu nepodařilo Srby porazit a na konci roku byly rakousko-uherské jednotky na téměř stejných pozicích jako na začátku války.</p>
+
+			<p>Dalším válčištěm se stala třetího srpna <strong>Západní fronta</strong>, kde se Německo snažilo rychle porazit Francii, což se nepodařilo podle plánu a Západní fronta zůstala od podzimu 1914 téměř beze změn.</p>
+
+			<p>Třetím válčištěm se podle očekávání stala <strong>Východní fronta</strong>, kde Rusové zahájili 15. srpna ofenzívu do Východního Pruska, která mohla bát nebezpečná pro celé Prusko, ale Němcům se podařilo tento útok zastavit a v několika bitvách Rusy porazit. Tím zachránili Prusko před invazí a vytvořili si podmínky pro postup v roce 1915.</p>
+
+			<p>Vstupem Osmanské říše do války na straně Trojspolku dne 29. října 1914 vzniklo několik nových <strong>menších front</strong>, neboť území Osmanská říše bylo hned na několika místech ve styku s územím států Trojdohody. Nejdůležitější z těchto front byla fronta proti Rusku na Kavkaze, kde po počátečním nástupu byly Osmanské armády zastaveny a o něco později zatlačeny do Arménie. Osmanské oddíly vedené německými důstojníky bojovaly s Brity v Egyptě a také v Mezopotámii.</p>
+
+			<p>Posledními oblastmi, které byly válkou zasaženy již roku 1914 se stala Afrika a Tichomoří.</p><br>
+
+			<p><strong>Válečné plány</strong></p>
+			<p>Evropské velmoci nejen, že se na válku dobře vyzbrojily, ale měly i <strong>strategické plány</strong>, které všechny počítaly s rychlým vítězstvím či alespoň mírem v krátké době. Jako určující se nakonec ukázaly strategické plány Německa, které rozehrálo svoji dlouho připravovanou velmocenskou hru o dominanci v Evropě a novém rozdělení kolonií. Otcem moderní německé válečné strategie byl v 60. letech 19. století <strong>Helmuth von Moltke starší</strong>. Podle jeho strategické koncepce „rozhodného manévrování“ měl být nepřítel zničen vysokou koncentrací vojsk, které se do válečného prostoru dostanou v krátké době po železnici. Tato masa vojsk společně s kvalitními německými zbraněmi (dělostřelectvo, minomety, kulomety) zajistí vítězství v rozhodné bitvě, kde bude zničena většina vojsk soupeře. Pak budou následovat mírová jednání, kde vítězné Prusko prosadí své cíle. Tato strategie slavila úspěch v roce 1871, kdy se v bitvě u Sedanu podařilo rozdrtit armády Francie a následná mírová smlouva umožnila sjednocení Německa a vznik německého císařství.</p>
+
+			<div class="obrazek-text">
+				<img src="schliefen.jpg" class="index-img">
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Schliefenův plán
+				</div>
+			</div>
+
+			<p>Na této základní strategické koncepci byl postaven <strong>Von Schliefenův plán</strong>, který byl vypracován v letech 1891-1905 náčelníkem německého generálního štábu Alfredem hrabětem von Schlieffenem. Von Schlieffenova koncepce „války na dvou frontách“ počítala nejen s nepřátelstvím Francie, ale i Ruska. Plán počítal s rychlým přesunem vojsk na západ a útokem na Francii přes neutrální Belgii. Během 20 dnů měla být obsazena Paříž, za dalších 22 dnů bojů poté měla být francouzská armáda zničena, Francie vyřazena z války a došlo by k přesunu vítězných německých oddílů na východ a k porážce ruské armády. Plán předpokládal pomalou ruskou mobilizaci, jež měla poskytnout právě von Schlieffenových 42 dní na porážku Francie. Konečnou podobu dostala německá válečná strategie v posledních předválečných letech a jejím autorem byl náčelník německého generálního štábu von Moltke mladší, který však pouze posílil oddíly určené k dobytí Paříže.</p> <br>
+
+			<h5>První boje</h5>
+			<p><strong>Západní fronta</strong></p>
+			<p>Dne prvního srpna 1914 stála na západních hranicích Německa armáda, jež čítala 1 485 000 mužů a jejím prvním válečným aktem byla okupace Lucemburska. O dva dny později jednotky této armády vstoupily do neutrální Belgie, čímž byla Velká Británie donucena vyhlásit Německu válku, neboť byla garantem belgické neutrality. I přes statečnou obranu belgických a britských vojsk padl 20. srpna 1914 Brusel do rukou německých vojsk a během příštích dnů byla téměř celá Belgie okupována Německem. Německo zřídilo dne 26. srpna Generální governement Belgie (Generalgouvernement Belgien), který zpočátku řídil polní maršál Kolmar, svobodný pán von der Goltz. Německé armády pak postupovaly do severovýchodní Francie s cílem zničit francouzskou armádu spolu s britským expedičním sborem a tento postup vedl k sérii bitev. V první <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html">bitvě na řece Marně</a> (bitva je známa jako „Zázrak na Marně“) dne pátého srpna  se francouzské armádě podařilo s vypětím všech sil zastavit německý postup (francouzské vojáky vozili na frontu pařížské taxíky).  V bitvě u Revigny a ani v následujících střetech se však Němcům  nepodařilo zničit armádu Francie a donutit Francii k uzavření míru v plánovaných 42 dnech.</p>
+
+			<p>Toto selhání von Schlieffenova plánu mělo za následek <strong>změnu ve vedení</strong> německého generálního štábu, kde byl von Moltke mladší nahrazen ministrem války, generálporučíkem Erichem von Flakenhaynem. Nový německý vrchní velitel nařídil okamžitý ústup o několik desítek kilometrů do lepších obranných pozic, které lépe umožnily odrážet útoky britských a francouzských vojsk. Dne 18. září se rozhořela série bitev (známá jako „závod k moři“), v nichž se obě strany snažily obejít a obklíčit soupeře. Tato poslední fáze pohyblivé války na západě v roce 1914 skončila 20. října a válka na západní frontě od této chvíle ustrnula, armády se zakopaly, opevnily a vznikl fenomén zvaný <strong>Zákopová válka</strong>. Tento nový styl válčení byl z hlediska techniky založen na zákopech, kulometech, dělostřelectvu a ostnatém drátu. Vojáci znepřátelených armád zůstali celé měsíce a roky v téměř stejných pozicích a do použití prvních tanků vznikla v podstatě patová situace, kdy každý sebemenší postup o pár kilometrů či dokonce stovek metrů byl vykoupen obrovskými ztrátami tisíců vojáků. Rok 1914 byl také prvním rokem, v němž byly nasazeny nové zbraně. Jednalo se především o ponorky, vzducholodě a letadla.</p>
+
+			<p>Ihned po vypuknutí války začalo britské námořnictvo s <strong>blokádou německých přístavů</strong> s cílem odříznout Německo od dovozu strategických surovin. Německá flotila byla sice jen o málo slabší než britská, ale v německém velení převládala značná skepse ohledně možnosti porazit anglické loďstvo v bitvě. Výsledkem byla minimální německá námořní aktivita, takže se boje omezily na střetnutí lehčích sil (křižníky a torpédoborce) a jedinými většími úspěchy se na německé straně mohly pochlubit pouze ponorky. Dne devátého září 1914 potopila německá ponorka U 9 v severním moři během jedné hodiny tři anglické pancéřové křižníky, čímž skvěle uvedla ponorky do dějin válčení.</p>
+
+			<p><strong>Srbská fronta</strong></p>
+			<p>S vypovězením války Srbsku dne 28. července 1914 začalo Rakousko-Uhersko shromažďovat své armády poblíže srbských hranic. Dne 12. srpna 1914 přešly tyto síly do útoku na Srbsko, jehož armáda byla početně o mnoho slabší. Srbové však odrazili tento útok i další dvě ofenzívy vojsk Rakousko-Uherska započaté ve dnech sedmého září a pátého listopadu 1914. V těchto bitvách padlo cca 170 000 Srbů a rakousko-uherské ztráty činily cca 215 000 mužů. Výsledkem tří rakousko-uherských ofenziv však byly naprosto minimální územní zisky, neboť srbská armáda přešla třetího prosince 1914 do protiútoku a během dvou následujících týdnů vytlačila rakousko-uherská vojska ze svého území.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Velké boje na východě začaly 15. srpna <strong>ruskou ofenzívou do východního Pruska</strong>, což vyvolalo v německém generálním štábu překvapení, protože Rusové mobilizovali a přešli do útoku mnohem rychleji, než předpokládal německý plán. Vzhledem k početní slabosti německých sil postupovala ruská armáda zpočátku vpřed, ale již 17. srpna byla zastavena u Stalluponen (dnes Nestěrov v Rusku). O tři dny později se Rusům podařilo zvítězit nad Němci u Gumbinnenu (dnes Gusev v Rusku). To vyvolalo změny ve vedení německé armády na východě a jejím novým velitelem se stal generál <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html">Paul von Hindenburg</a>, jehož zástupcem se stal generálmajor Erich Ludendorff. Od 20 srpna do 31. srpna probíhala bitva u Tannenbergu, v níž byla ruská armáda tvrdě poražena. Následovala další ruská porážka u Mazurských jezer (bitva probíhala ve dnech pátého až 13. září 1914) a ještě jedna na Němenu (26. až 28. září 1914). Tato série německých vítězství stála Rusko dvě kompletní armády a zachránila Prusko před okupací.</p>
+
+			<p>Na jižním úseku východní fronty stály proti sobě armády Ruska a Rakousko-Uherska. Rakousko-Uherské velení se dopustilo strategické chyby, když většinu sil soustředilo na srbské frontě. Větší boje se zde odehrály ve dnech 23. srpna až 25. srpna u <strong>Krasniku</strong> a o den později následovala další bitva u <strong>Komarowa</strong>. V těchto bitvách měla rakousko-uherská armáda převahu a podařilo se jí zatlačit ruské jednotky na východ o desítky kilometrů. Po tomto počátečním úspěchu však přišlo brzy vystřízlivění, neboť o několik dní později byl rakousko-uherský útok poražen u <strong>Zoločiva</strong> a 29. srpna utrpěli Rakušané velké ztráty mezi řekami Lipa. I přes tyto neúspěchy rakousko-uherská ofenziva pokračovala, ale Rusové přešli do protiútoku, který se zastavil 50 km východě od Krakowa, čímž Rusové ohrozili Slezsko a vytvořili si dobré nástupiště k útoku do Uher. Ztráty rakousko-uherské armády dosáhly 400 000 mužů a na pomoc musely být povolány německé jednotky. Následovala série bitev o <strong>Varšavu</strong>, které skončily 26. října. V těchto bitvách se Rusům vedlo o něco lépe, ale ani jedna strana nedosáhla zamýšlených cílů ani velkých územních zisků a podobný výsledek měly další boje, které se zde do konce roku 1914 odehrály.</p>
+
+			<p><strong>Turecko vstoupilo do války</strong></p>
+			<p>Dne 29. října 1914 vstoupilo Turecko do války na straně Trojspolku. Tímto se První světová válka z Evropy přelila na další kontinent, neboť vznikla další fronta na Kavkaze, kde se Turci střetli s Rusy. Nové válčiště bylo otevřeno v Mezopotámii, kde rivalem armády turecké byla armáda britská. Nástupce proroka Mohameda sultán <strong>Mehmed V. vyhlásil</strong> 11. listopadu 1914 <strong>svatou válku</strong> s cílem vyvolat povstání na muslimských územích, které kontrolovali Britové, ale výsledek byl velmi slabý. Přesto Britové zbavili úřadu nominálního egyptského místokrále (khediva) a Egypt byl vyhlášen protektorátem. Turci zahájili přípravy k dobytí Suezského průplavu, který měl pro Británii strategickou hodnotu, neboť tudy proudili vojáci z britských kolonií na západní frontu.</p>
+
+			<p><strong>Africké bojiště</strong></p>
+			<p>V srpnu 1914 boje začaly v Africe. Německý generál Lettow-Vorbeck dokázal s nepatrnými silami podnikat úspěšné ofenzivní akce z Německé východní Afriky do britských kolonií Ugandy a Keni. Britové odpověděli druhého listopadu 1914 vyloděním u Tangy. Nejenže se jim nepodařilo zničit německé síly, ale byli dokonce pátého listopadu zahnáni na ústup a donuceni nalodit se. Němcům padlo do rukou mnoho munice a materiálu a to jim umožnilo vést na tomto válčišti ofenzivní akce v roce 1915, protože vzhledem k námořní blokádě nebyli schopni německou východní Afriku zásobovat.</p>
+
+			<p><strong>Tichomořské válčiště</strong></p>
+			<p>Vstupem Japonska do války na straně Trojdohody dne 23. srpna 1914 se válečný požár rozšířil do další části světa. V Tichomoří se bojovalo především o <strong>německé</strong> kolonie (Papuu, Samou, Šalamounovy ostrovy, Karolínské ostrovy, Marshallovy ostrovy, Mariánské ostrovy a Bismarckovi ostrovy) a protože Německo nemělo reálnou šanci (vzhledem k námořní blokádě) tyto pozice posílit, bylo jen otázkou času, kdy o své kolonie přijde. Do konce roku 1914 obsadily japonské a australské jednotky všechny německé kolonie, čímž válka v Tichomoří téměř  skončila (jednotlivé německé křižníky se pokoušely rušit zásobovací trasy v Tichomoří).</p>
+			<p>Je tedy zcela zřejmé, že již v prvním válečném roce se z evropského konfliktu stal konflikt světový, přestože největší boje proběhly v Evropě.</p>
+
+			<h5>Druhý válečný rok 1915</h5>
+			<p><strong>Stručný souhrn</strong></p>
+			<p>Na <strong>Srbské frontě</strong> došlo tohoto roku k velkým změnám a Srbové byli nuceni ustupovat před zdrcující převahou.</p>
+
+			<p>O změnu na <strong>Západní</strong> frontě se pokusili Francouzi, Britové i Němci, ale i přes použití jedovatých plynů jen malé části území změnily v  tomto roce majitele.  Bojovalo se rovněž na moři, kde německé ponorky dosáhly skvělých výsledků proti válečným i obchodním lodím Trojdohody.</p>
+
+			<p>Situace na <strong>Východní frontě</strong> se v průběhu tohoto roku velmi změnila, neboť mocnosti Trojspolku zahájily velký útok v důsledku kterého byla fronta posunuta na východ.</p>
+
+			<p>Strategická situace <strong>Osmanské říše</strong> se během tohoto roku poněkud zhoršila, neboť Rusové zvítězili na Kavkaze , Britové a Francouzi se vylodili v Dardanelách a osmanský útok na Egypt byl odražen. Přesto se však osmanská říše nezhroutila, ale právě boje v tomto a následujícím roce ji ekonomicky velmi vyčerpaly.</p>
+
+			<p>Vstupem Itálie do války vznikla <strong>Italská fronta</strong>, kde se za strašlivých ztrát pokoušeli Italové prorazit rakousko-uherské linie, což se jim vůbec nevedlo.</p>
+
+			<p><strong>Západní fronta</strong></p>
+			<p>S patovou situací, která byla výsledkem bojů z minulého roku, nebyla spokojena ani jedna strana a oba protivníci se pokoušeli ji změnit. Nejprve zaútočili Britové dne desátého března u Neuve Chapelle. Po této bitvě následoval dne 22. dubna německý pokus o průlom fronty <a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">u Yprů</a>, kde byl podruhé (první pokus proběhl již třetího ledna na východní frontě u Bolimova, ale očekávaný efekt se nedostavil) v historii použit otravný plyn, který tak získal svůj název Yperit. Přestože se tímto způsobem podařilo prolomit francouzské pozice a postoupit o čtyři kilometry, nebyl tento průlom využit k dosažení strategického úspěchu, neboť místní němečtí velitelé nejednali dostatečně ofenzivně.</p>
+
+			<p>Francouzi se pokusili prolomit u Champagne a v Alsasku, ale byli vždy odraženi s velkými ztrátami a žádnými nebo minimálními územními zisky.</p>
+
+			<div class="obrazek-text" style="margin-left: 5px;">
+				<img src="subm.jpg" class="index-img">
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Německý U-Boat
+				</div>
+			</div>
+
+			<p>O něco aktivnější bylo <strong>německé loďstvo</strong>, které již v závěru roku 1914 dvakrát úspěšně a beze ztrát bombardovalo města na anglickém pobřeží. Při třetím pokusu však německé bitevní křižníky narazily na eskadru svých anglických protějšků a výsledkem byla dne 24. ledna námořní bitva u Dogger Banku. V této bitvě sice Angličané zvítězili, ale nepodařilo se jim zničit slabší německou eskadru.</p>
+
+			<p>Ještě aktivnější byly <strong>německé ponorky</strong>, které vystupňovaly své útoky, takže Velká Británie ztrácela jen kvůli ponorkám 50 až 100 lodí měsíčně. Ponorková válka byla navíc příčinou diplomatických potíží Německa, neboť sedmého května 1915 potopila německá ponorka U 20 britský parník Lusitania, na jehož palubě zahynulo 1201 cestujících, z nichž 128 bylo občany Spojených států amerických. USA ostře protestovaly a německé ponorky dostaly rozkazy, jež vedly ke zmírnění ponorkové války a k větší ohleduplnosti vůči neozbrojeným lodím.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Situace na východní frontě sice připomínala situaci na frontě západní, neboť i tady se armády koncem roku 1914 zakopaly, bylo zde však několik podstatných rozdílů. Nejdůležitějším z nich byl, v porovnání s Francií, <strong>obrovský prostor</strong> východního bojiště. Nebylo v silách tehdejších armád vytvořit na východě takovou frontu od severu k jihu, kterou by nebylo možno obejít nebo projít v některém ze slaběji chráněných úseků. Druhým podstatným rozdílem byla <strong>ruská armáda</strong>, která oproti armádám jiných evropských států byla hůře technicky vybavena a její velitelský sbor nedosahoval takových kvalit. Měla však takřka nevyčerpatelný lidský potenciál, neboť ruská říše byla obrovská a car mohl verbovat vojáky od Ukrajiny po Sibiř. Zatímco všechny mocnosti již na podzim 1914 pocítily z důvodu krvavých bojů nedostatek vojáků a přizpůsobily tomu svou válečnou strategii (důkladnější přípravy na každý útok, použití otravných plynů a zvyšování palebné síly malých jednotek, čímž bylo možno použít méně vojáků a ušetřit je tak pro další jednotky). Ruská armáda, přestože utrpěla obrovské ztráty a její početní stav se povážlivě snížil, podobnými problémy netrpěla. V záloze měla stále dost bojeschopných mužů, které mohl car kdykoliv zmobilizovat. Po selhání von Schlieffenova plánu byly některé německé jednotky přesunuty na východ a již sedmého února přešla německá armáda do útoku. Dne 22. února skončila druhá (zimní) bitva u Mazurských jezer ruským debaklem a postupující Němci osvobodili východní Prusko. Dne druhého května 1915 zahájili Němci <strong>generální ofenzívu na celé východní frontě</strong>. Výsledkem byly veliké územní zisky, takže ke dni 30. září 1915 okupovaly německé a rakousko-uherské armády Polsko, Litvu, západní Bělorusko a severozápadní Ukrajinu.</p>
+
+			<p><strong>Turecké fronty</strong></p>
+			<p>Turecká ofenzíva na Kavkaze skončila pro Turky katastrofou, neboť druhého ledna byla téměř celá útočící armáda zničena nebo se vzdala Rusům.</p>
+
+			<p>Tyto boje však měly ještě strašlivější dohru, neboť proti Turkům bojovali křesťanští Arméni, kteří byli poddanými tureckého sultána. V dubnu 1915 došlo k vyhlášení arménské vlády na Rusy obsazených územích, což Turkům stačilo k nařízení „přesunu arménského obyvatelstva do zázemí“. Tento přesun připomínal peklo (během „přesunu“ se konaly hromadné popravy mužů a statisíce Arménů zemřely hladem a žízní, neboť Turci naplánovali trasu pochodu přes nehostinné oblasti a nezásobovali dostatečně pochodující). V letech 1915 až 1917 zemřelo cca milion Arménů a tím byl spáchán zločin genocidy.</p>
+
+			<p>Počátkem února 1915 se Turci pokusili dobýt Suezský průplav, ale byli s velkými ztrátami odraženi.</p>
+
+			<p>Britské a francouzské velení při hledání nejlepší strategie k porážce Trojspolku rozhodlo, že nejslabším článkem je Turecko a tudíž nebude těžké ho rozhodným úderem vyřadit z války. Navíc Brity a Francouze poháněl strach z představy, že by Rusové došli do Istanbulu jako první, zmocnili se Dardanel a otevřeli si přístup do Středozemního moře. Na tomto příkladu je dobře vidět, jak žárlivě se tito spojenci hlídali. Po mnoha diskusích bylo rozhodnuto udeřit přímo z moře na Istanbul a tak 19. února 1915 začala Operace Dardanely. Velmi brzy se ukázalo, že nebude možné (ponorky, miny, dělostřelectvo) proplout bitevní eskadrou přímo až do Istanbulu, takže bylo rozhodnuto použít i pozemní vojska. Boje v Dardanelách trvaly až do devátého ledna 1916, kdy byly vyčerpané oddíly Britů a Francouzů evakuovány. Toto vítězství sice umožnilo Turkům pokračovat ve válce, ale vykrvácely v něm nejlepší oddíly Turecké armády a země se velmi ekonomicky vyčerpala. Tyto boje však zrodily tureckého národního hrdinu Mustafu Kemala. Z neznámého velitele divize se stal „Otec Turek“ – <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html">Atatürk</a>.</p>
+
+			<p><strong>Srbská fronta</strong></p>
+			<p>I na této frontě byli Němci nuceni poskytnout pomoc svému Rakousko-uherskému spojenci, neboť i na této frontě se již v roce 1914 jasně ukázalo, že Rakousko-uherská armáda není schopna dosáhnout naplánovaných cílů. Po přisunutí dostatečného množství jednotek zaútočila německá armáda šestého října 1915 na Srbsko. Již devátého října padl Bělehrad, prvního listopadu Kragujevac.</p>
+
+			<p>Dne 11. října 1915 <strong>vstoupilo Bulharsko do války</strong> na straně Trojspolku, bulharská armáda zaútočila na Srbsko a již 22. října dobyla Skopje. Bylo jasné, že soustředěnému náporu armád Německa, Rakousko-Uherska a nově Bulharska nemůže Srbsko dlouho odolávat a přestože Srbové bojovali statečně, převaha byla příliš velká. Srbské armádě nezbylo než ustupovat na jih, pokud nechchtěla být obklíčena a zničena.</p>
+
+			<p><strong>Italská fronta</strong></p>
+			<p>Dne 3. května 1915 <strong>vystoupila Itálie z Trojspolku</strong> a 23. května vyhlásila válku Rakousko-Uhersku. Tato změna stran vyplynula z britsko-italských jednání v Londýně, kde bylo Itálii přislíbeno velké území Istrie a Dalmácie za vojenskou pomoc proti Trojspolku. Přesně o měsíc později spustili Italové ofenzívu ve směru Terst. Výsledkem byla první bitva na řece Soči (Isonzo) ve které se italská armáda, i přes svou početní převahu na oddíly Rakousko-Uherska, nedokázala posadit. Územní zisky byly mizivé a ztráty veliké. Italské velení se však nedalo tak snadno odradit od svého záměru a spustilo další ofenzívy na řece Soči. Do konce roku 1915 na na tomto nevelkém území odehrály čtyři bitvy známé jako první až čtvrtá bitva na řece Soči. Výsledkem všech těchto bitev byly vysoké ztráty a téměř žádné územní zisky. Novým válčištěm se od této doby stalo i Jaderské moře, kde se větší námořní bitvy nikdy neodehrály, neboť zde byly aktivní především lehčí síly (ponorky, rychlé čluny).</p>
+
+			<h5>Třetí válečný rok 1916</h5>
+			<p><strong>Stručný souhrn</strong></p>
+			<p>Soustředěný nápor armáda Trojspolku na Srbsko měl za následek vytlačení srbské armády z území Srbska,čímž Srbská fronta skončila. Vystřídala ji o něco jižněji fronta Soluňská.</p>
+
+			<p>Na <strong>Západní frontě</strong> proběhly tento rok obrovské boje, když se obě strany pokoušely zničit armády soupeře. Výsledkem byly ještě strašnější ztráty než minulý rok a téměř žádné územní změny. na moři došlo k největšímu střetnutí této války a německé ponorky dosáhly opět velkých úspěchů.</p>
+
+			<p><strong>Východní fronta</strong> byla i tento rok v pohybu, ale opačným směrem než rok minulý. Iniciativu převzali Rusové a podařilo se jim v jižním úseku fronty postoupit o desítky kilometrů a způsobit nepříteli veliké ztráty.</p>
+
+			<p>Na <strong>Italské frontě</strong> pokračovali Italové v marných pokusech o průlom s podobným výsledkem jako v  roce předcházejícím.</p>
+
+			<p>Novým bojištěm se stalo <strong>Rumunsko</strong>, které vstoupilo do války po boku Trojdohody.  Reakce armád Trojspolku byla bleskurychlá a zničující, takže rumunská armáda byla v krátké době vytlačena z rumunského státního území.</p>
+
+			<p><strong>Západní fronta</strong></p>
+
+			<div class="obrazek-text" style="margin-left: 5px;">
+				<img src="verdun1.jpg" class="index-img">
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Francouz postřelený při útoku
+				</div>
+			</div>
+
+			<p>Po nic neřešících ofenzívách z roku 1915 zůstala západní fronta téměř stejném území jako na konci německé ofenzívy v roce 1914. Obě strany se tento stav pokoušely změnit, ale obě byly moc silné na to, aby byly poraženy a příliš slabé na to, aby zvítězily, takže výsledkem byly další statisíce mrtvých a zraněných  vojáků. Iniciativu nejprve převzali Němci, kteří již 21. února 1916 zaútočili na Verdun. Tohle město obepínal ze severu pás pevností a pro Francii bylo důležité z hlediska její obrany. <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html">Útokem na Verdun</a> začala nejdelší (nikoliv nejkrvavější) bitva První světové války, přezdívaná „Verdunský mlýnek na maso.“ Francouzi přisunovali další divize, bránili se velmi statečně a nakonec přešli do protiútoku, takže když byla 18. prosince 1916 bitva u konce, stála německá armáda na těch samých pozicích, z kterých 21. února zaútočila. Ztráty dosáhly děsivé výše, neboť během bitvy bylo vyřazeno z boje (mrtví,zranění a pohřešovaní) 336 000 německých a 362 000 francouzských vojáků. Ještě během bitvy u Verdunu spustila britská armáda a francouzská armáda ofenzívu na Sommě. Tím začala nejkrvavější bitva První světové války, neboť při ní zemřelo 498 054 Britů, 194 451 Francouzů a 237 159 Němců. Spojenci byli zastaveni 18. listopadu 1916, aniž dosáhli svých cílů.</p>
+
+			<p>V době těžkých bojů u Verdunu byla dosavadní pasivita německého válečného loďstva nepřijatelná a tak se němečtí admirálové odhodlali k akci. Téměř celá německá flotila vyplula 31. května 1916 do Severního moře v naději, že se jí podaří překvapit a zničit nějakou menší část britského válečného námořnictva. Britská admiralita však byla o vyplutí německé flotily informována (informace ale neříkaly, že vyplula celá německá flotila, takže obě strany očekávaly, že překvapí a zničí část nepřátelského loďstva), takže do Severního moře poslala většinu válečných lodí, které měla na Britských ostrovech k dispozici. Výsledkem byla <strong>námořní bitva u Jutska</strong> (nebo u Skagerraku), v které Britové zvítězili ze strategického pohledu, neboť zahnali německou flotilu na ústup. Utrpěli ale větší ztráty než flotila německá, takže obě strany po bitvě ohlásily vítězství. Pravdou ovšem zůstává, že mnoho německých lodí bylo natolik poškozeno, že se poměr sil na dlouhé měsíce výrazně změnil ve prospěch Britů. I v roce 1916 pokračovala ponorková válka, ve které německé ponorky dosáhly slušných výsledků proti námořnímu obchodu Trojdohody.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Na žádost Francie a Velké Británie spustilo Rusko sérii útoků ve snaze upoutat co nejvíce německých divizí a odlehčit tak západní frontě. Dne 17. března zaútočili Rusové ve východní Litvě, kde 14. dubna byli poraženi v bitvě u jezera Narocz. Dne čtvrtého června 1916 zahájil ruský generál Alexej Brusilov ofenzívu proti armádě Rakousko-Uherska na severozápadní Ukrajině. Tato ofenzíva trvala do 20. září 1916. <strong>Brusilova ofenzíva</strong> zatlačila jednotky Trojspolku až o 60 kilometrů na západ, což by byl na západní frontě velký úspěch, ale na východě to mnoho neznamenalo. V těchto bojích ztratilo Rusko 1 400 000 mužů, Rakousko-Uhersko 750 000 mužů a Německo 150 000. Tyto obrovské ztráty však podlomily morálku ruské armády.  Brusilova ofenzíva byla největším vítězstvím Trojdohody v roce 1916, vyvolala změny v německém vrchním velení (von Flakenhayn byl nahrazen von Hindenburgem) a změny ve vedení východní fronty (Německo převzalo odpovědnost za celou východní frontu).</p>
+
+			<p><strong>Italská fronta</strong></p>
+			<p>I v průběhu roku 1916 útočila italská armáda na rakousko-uherské pozice na řece Soči. Dne 11. března začala pátá <strong>bitva na řece Soči</strong> a do konce roku jich zde bylo svedeno celkem devět (počítáno i s bitvami z roku 1914), ale kromě obrovských ztrát, dobytí města Gorica a postupu o pár desítek kilometrů nedosáhla italská armáda ničeho. Rakousko-uherská armáda kontrovala 11. března 1916 svojí ofenzívou v Jižním Tyrolsku. Tato ofenzíva zpočátku byla pro Italy překvapením a díky tomu se Rakousko-uherské armádě podařilo postoupit, ale italský protiútok ji zatlačil do přibližně stejných pozic, odkud vyšla.</p>
+
+			<p><strong>Srbská fronta</strong></p>
+			<p>Výsledkem soustředěného náporu Trojspolku na Srbsko v roce 1915 byl ústup srbské armády na jih. Srbové bojovali statečně, ale převaha byla příliš veliká a po vstupu Bulharska do války na straně Trojspolku se jejich strategická situace stala neudržitelnou. Po odříznutí bulharskými vojsky od zásobování dne 16. října 1915 už měla srbská armáda jedinou možnost jak se nenechat zničit. Tou možností byla evakuace na ostrov Korfu, která se úspěšně uskutečnila. Dne třetího března 1916 dosáhly jednotky Trojspolku Srbsko-řeckou hranici a krátce na to dorazily Rakousko-uherské jednotky do jižní Albánie, čímž zanikla srbská fronta, ale vznikla soluňská fronta.</p>
+
+			<p><strong>Soluňská fronta</strong></p>
+			<p>Počátky válečných aktivit v oblasti Egejského moře a Řecka se datují již od roku 1915, kdy v souvislosti s přípravami na Dardanelskou operaci zabrala francouzská a britská armáda některá území tehdy neutrálního Řecka, která byla použita jako odrazový můstek k útoku na Dardanely a k zásobování srbské armády. Když jednotky Trojspolku dorazily počátkem března 1916 na Srbsko-řecké hranice, čelili jim zde Francouzi a Britové. V průběhu roku 1916 zde bylo svedeno několik bitev, ale po zbytek války byla tato fronta vedlejší a neprobíhaly na ní velké pohyby, což se nezměnilo ani vstupem Řecka do války na straně Trojdohody dne 29.června 1917.</p>
+
+			<p><strong>Rumunská fronta</strong></p>
+			<p>Dne 28. srpna 1916 vyhlásilo Rumunsko Trojspolku válku a jeho armády zaútočily na Rakousko-uherské Sedmihradsko. Do poloviny září postoupili Rumuni o 75 kilometrů, reakce Trojspolku na sebe nedala dlouho čekat a již prvního září dobyly spojené jednotky (především Bulhaři a Osmani) Trojspolku Dobrudžu, 22. října Konstancu a 23. listopadu překročily Dunaj. Z druhé strany vpadly do Rumunska spojené armády Německa a Rakousko-Uherska a i jejich postup byl velmi rychlý, neboť již 29. září padla Sibia, devátého října Brasov a šestého prosince Bukurešť. Tím bylo Rumunsko vyřízeno, přestože jeho přeživší jednotky pokračovaly v boji v Moldavsku.</p>
+
+			<h5>Třetí válečný rok 1917</h5>
+			<p><strong>Stručný souhrn</strong></p>
+			<p>Rok 1917 znamenal <strong>obrat ve válce</strong>, neboť právě tento rok se Východní fronta zhroutila a Německo zapojilo téměř všechny své divize do bojů na západě. Vzhledem k dlouhotrvající nespokojenosti s carskou vládou a těžkým ztrátám ruské armády na bojištích vypukla během února v Rusku revoluce. Car Mikuláš II. z rodu Romanovců, který vládl v Rusku od roku 1613, se vzdal 27. února 1917 vlády a moc se postupně ocitala v rukou Prozatimního výboru Dumy, pak v rukou Prozatimní vlády knížete Lvova až se po jejím pádu dne sedmého července 1917 dostala do rukou Kerenského vlády v jejíž čele stál A. Kerenský. Tato vláda chtěla dál pokračovat ve válce s Německem, Rakousko-Uherskem a Osmanskou říší. Na její pokyn ruská vojska podnikla Kerenského ofenzívu, kterou ani přes počáteční úspěch nedokázala dotáhnout do vítězného konce, protože ruskou armádu v té době už velmi poškozovala demoralizace a dezerce. Rusko sice po většinu roku ještě pokračovalo ve válce, ale nebylo schopno útoků strategického charakteru. Především Německá armáda, ale i Rakousko -Uherská armáda reagovaly na tuto změnu situace přesunem mnoha divizí z Východní fronty na jiná bojiště, zejména na Západní frontu, kde se chystal poslední německý pokus porazit Francouze a Brity, ale i na Italskou frontu, kde se jejich činnost způsobila Italům drtivou porážku u Caporetta.</p>
+
+			<p>Druhou velkou změnou byl <strong>vstup USA do války</strong> na straně Trojdohody. V USA byla velice silně podporována politika Izolacionismu, která v podstatě hlásala udržení USA mimo konflikt, ale šestého dubna 1917 USA válku vyhlásily Německu a sedmého prosince téhož roku Rakousko-Uhersku.Tím se na stranu Trojdohody přidala budoucí světová velmoc s válkou nedotčeným lidským potenciálem a obrovskou průmyslovou základnou. Vojenská síla USA se nejprve projevila na moři, kde válečné lodě Amerického námořnictva (US Navy) zasáhly do boje s německými ponorkami, jež v té době vážně ohrožovaly zásobování Velké Británie. Zásobovací situace států Trojspolku však byla ještě horší, protože námořní blokáda byla velmi účinná. Na Západní frontě byla americká přítomnost znatelnější až v roce 1918, protože trvalo dlouho než Američané zmobilizovali, vycvičili a vystrojili dostatečné množství vojáků, aby je pak poslali loděmi přes Atlantský oceán až na Západní frontu. Poměr sil se během roku 1917 dále měnil v neprospěch Trojskpolku, neboť 27. června mu vyhlásilo válku Řecko a 26. října Brazílie.</p>
+
+			<p>Změny proběhly i v <strong>bojové taktice</strong> válčících stran. Masové bodákové útoky proti zakopanému nepříteli, jehož pozice obehnané ostnatým drátem a kryté děly a kulomety byly téměř nedobytné, stály všechny bojující armády tolik živé síly, že již na konci prvního válečného roku musely být početní stavy mužů v jednotkách redukovány. Obě strany přišly s vlastními řešeními. Britové a Francouzi vsadili na konstrukci a masové <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-zbrane.html">nasazení tanků</a>. Německým receptem na pat zákopové války bylo vytvoření <strong>speciálních útočných oddílů</strong>. Tyto oddíly byly speciálně vycvičeny a vyzbrojeny plamenomety a minomety k proražení díry do nepřátelských linií a touto dírou měly pak proniknout další jednotky a postupovat dál, přičemž těžce opevněné body nepřítele měly být obcházeny.</p>
+
+			<p>Změna nastala i na rakousko-uherském trůně, neboť císař <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html">František Josef I.</a> zemřel 21. listopadu 1916 a císařem se stal <strong>Karel I.</strong> Tento panovník rychle rozpoznal, že porážka Trojspolku je již jen otázkou času a začal různými cestami usilovat o mír s Trojdohodou. Jeho snahy o mír vždy narazily na neochotu Německa, ale ani Francie nebyla míru příliš nakloněna. Nástup Karla I. na rakousko-uherský trůn znamenal změnu politického kursu a obnovení parlamentarismu.</p>
+
+			<p><strong>Západní fronta</strong></p>
+			<p>Po více jak dvou letech válčení na západě, kdy se fronta téměř nehýbala se napříč Francií táhl <strong>pruh spálené země</strong>, který začínal v severozápadní Belgii a končil u hranic Švýcarska. Na tomto několik desítek kilometrů širokém a několik set kilometrů dlouhém území byla vlivem dělostřeleckého bombardování vytvořena krajina podobná té na měsíci. Na tomto území byly některé vesnice zcela vymazány z mapy, nerostly tam žádné stromy a nežila zvířata. Takový byl obraz západní Francie na počátku roku 1917.</p>
+
+			<p>Dne 31. ledna 1917 se Německo rozhodlo pro vyhlášení neomezené <strong>ponorkové války</strong>, což znamenalo, že německé ponorky budou ve svých operačních oblastech potápět bez výstrahy válečné i obchodní lodě nejen mocností Trojdohody, ale i neutrálních zemí. Toto rozhodnutí mělo brzy své následky, neboť o tři dny později přerušila vláda USA diplomatické styky s Německem a dne šestého dubna 1917 <strong>vyhlásila vláda USA válku Německu</strong>. Do války vstoupil  obrovský lidský a zbrojní potenciál, ale Amerika potřebovala čas na zmobilizování a přesunutí své vojenské síly do Evropy a právě tento čas považovali němečtí stratégové za příliš dlouhý na to, aby USA mohly výrazně ovlivnit boje na Západní frontě. První větší americký kontingent vojsk pod velením generála J. Perschinga  přistál ve Francii dne 24. června a do konce roku bylo do Francie přepraveno 180 000 amerických vojáků.</p>
+
+			<p>Dne 23. února 1917 zahájily německé armády strategický ústup na téměř celé Západní frontě. Tento manévr zavedl německé armády do předem připravené linie obranných postavení, kterou Němci pojmenovali <strong>Hindenburgova linie</strong>.  Dne devátého dubna zahájila britská armáda ofenzívu v oblasti Arrasu, která byla ukončena až v květnu 1917. Britové sice svých cílů nedosáhli a navíc ještě utrpěli ztráty cca 150 000 mužů zabitých, zraněných nebo zajatých, ale podařilo se jim odvrátit německou pozornost od francouzské části fronty. Francouzi udeřili v Champagni o sedm dní později než Britové, ale i přes počáteční úspěch utrpěli obrovské ztráty, které do 20. dubna přesáhly 100 000 mužů a do ukončení ofenzívy dne 15. května dosáhly 187 000 mužů. Den po zahájeni této ofenzívy vypukla ve francouzské armádě <strong>vzpoura</strong>, která začala u francouzského 108. pluku, jehož vojáci prostě opustili tváří tvář nepříteli své bojové pozice. Tato vzpoura se v krátké době rozšířila do celkem 112 francouzských divizí a zapojilo se do ní aktivně cca 35 000 francouzských vojáků, kteří odmítali útočit na nepřítele. Tyto události velmi podlomily bojeschopnost francouzské armády po celý zbytek roku 1917 a  jejich důsledkem byla změna ve francouzském vojenském vedení, neboť strůjce poslední francouzské  ofenzívy generál R. Nivelle byl dne 15. května 1917 nahrazen generálem H-P. Pétainem. Pétainovi se během několika měsíců podařilo obnovit bojeschopnost francouzské armády.</p>
+
+			<div class="obrazek-text" style="margin-left: 5px;">
+				<img src="cambrai1.jpg" class="index-img">
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Osádka vykopávající tank z bahna
+				</div>
+			</div>
+
+			<p>Dne 7. června 1917 v jihozápadní Belgii přešli do útoku Britové a jejich cílem byla vyvýšenina hřbetu Messines, kterou se jim podařilo dobýt, ale ztratili v boji 17 000 mužů, nicméně ztráty německé dosáhly 25 000 z boje vyřazených mužů a z toho 7 500 bylo zajato. Tato čísla ukazují první náznaky obratu na západní frontě, protože německé armádě již začínal docházet dech. Tento prostorově a časově omezený útok však byl pouze přípravou na <strong>britskou ofenzívu</strong>, která začala koncem července a vyvrcholila třetí bitvou u Yprů. I přes pečlivou dělostřeleckou přípravu, která trvala několik dní postoupili Britové jen málo a následné německé protiútoky je zatlačily zpět do pozic, odkud vyšli. Celá ofenzíva stála Velkou Británii 310 000 mužů a Německo přišlo o 260 000 mužů. Dne 20. listopadu zaútočili Britové <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html">u Cambrai</a>. Na čele útoku jelo 476 tanků a britské velení doufalo, že tato nová zbraň překoná německé linie. Zpočátku byli Němci překvapeni a britské tanky postoupily již první den do hloubky 9 – 12 km. V dalších dnech se ale britský postup zastavil, neboť tanky trpěly častými technickými poruchami, zapadaly do kráterů po dělostřeleckých granátech a koordinace jejich činnosti s britskou pěchotou nebyla dostatečná. Dne 30. listopadu převzali iniciativu Němci, zaútočili na Brity u Cambrai a zatlačili je do původních pozic. Výsledkem prvního hromadného nasazení tanků v dějinách byly pouze veliké ztráty a malé územní zisky.</p>
+
+			<p>Na moři bojovaly celý rok 1917 hlavně německé <strong>ponorky</strong>, jejichž útoky vážně ohrožovaly námořní dopravu do Anglie. Vysoké ztráty obchodních lodí donutily Brity k zavedení konvojového systému, takže od 10. května 1917 již většina obchodních lodí Trojdohody plula přes Atlantský oceán zařazená do konvojů a pod ochranou válečných lodí. Konvojový systém se osvědčil, ztráty obchodních lodí poklesly a ztráty německých ponorek stouply.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Východní fronta začátkem roku 1917 neskýtala podobný obraz jako západní bojiště. Vzhledem k většímu pohybu znepřátelených armád se zde nevytvořil mnohasetkilometrový pás spálené země.Východní frontou v roce 1917 hýbaly především <strong>politické události v Rusku</strong>, které pak měly přímý vliv na rozklad ruské armády a vystoupení Ruska z 1. světové války.</p>
+
+			<p>Ruská revoluce začala dne 8. března 1917 v Moskvě, kde vypukly masové <strong>demonstrace</strong> proti nedostatku potravin, paliva a autokratickému stylu carské vlády. Policie použila proti demonstrantům zbraně, ale nepokoje neustaly a stávek se do 10. března zúčastnilo vice jak 20 000 dělníků. Mikuláš II. povolal armádu k potlačení nepokojů, ale vyslané armádní jednotky odmítly do stávkujících střílet. Dne desátého března vypuklo v Petrohradu (do roku 1914 S. Petersburg) povstání zdejší vojenské posádky. O den později <strong>odmítl car Mikuláš II. politické reformy</strong>, jež mu navrhnul předseda Dumy a reagoval nařízením, jež ruský parlament rozpustilo. Duma však pokračovala v činnosti a události se daly nezadržitelně do pohybu. Dne 12. března byl založen Petrohradský sovět. Tento orgán vytvořili dělníci, levicoví politici, agitátoři a stávkoví vůdci; sovět neuznával carskou ani Prozatimní vládu. Petrohradský sovět se v krátkém čase usnesl na Příkazu č. 1. Tento příkaz zbavoval ruské důstojníky hodnosti a práva velet vojákům, namísto důstojníků měly velet Vojenské sověty. Tyto orgány byly pak hromadně zakládány v mnoha jednotkách ruské armády a uzurpovaly si autoritu důstojníků. Toto velmi přispělo k rozkladu ruské armády, která již tak trpěla častými dezercemi. Dne 14. března jmenovala Duma novou ruskou vládu v jejímž čele stál kníže G. Lvov. O den později <a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html">Mikuláš II.</a> <strong>abdikoval</strong> a na trůn měl podle jeho představ usednout jeho bratr Michail, ale ten již následujícího dne abdikoval a předal moc Prozatimní vládě v jejímž čele stál kníže G. Lvov.</p>
+
+			<p>Dne 3. dubna 1917 se po letech strávených v exilu vrací do Petrohradu V. I. Uljanov, který si dal přezdívku <strong>Lenin</strong>. Jeho návrat organizovala a sponzorovala německá vláda, která doufala, že odhodlaný revolucionář dokáže podlomit ruskou bojeschopnost. Němci převezli Lenina v zaplombovaném vagonu ze Švýcarska až na hranice Ruska a dále podporovali jeho aktivity. Lenin byl vůdcem bolševické strany, která byl jednou z mnoha ruských socialistických stran, které v té době tvořily Sociálně demokratickou dělnickou stranu Ruska. Ideologie těchto stran byla postavena na tezích K. Marxe a celé učení je známé jako marximus. Lenin měl v plánu svrhnout Prozatimní vládu a ukončit ruské angažmá v 1. světové válce.</p>
+
+			<p>Dne 18. dubna ohlásil ruský ministr zahraničí P. Miljukov, že Rusko bude pokračovat ve válce. Následovaly veliké demonstrace a vláda byla nucena změnit své složení. V nové vládě poprvé zasedli ve větším množství zástupci ruských socialistických stran konkrétně Eseři a Menševici a funkci ministra války získal A. Kerenský. Na jeho příkaz započali Rusové na středním úseku Východní fronty s přípravou další ofenzivy, která vstoupí do dějin jako Kerenského ofenzíva. Velením ruských vojsk byl pověřen generál A. Brusilov, který vedl úspěšnou Brusilovu ofenzívu minulý rok. Dne prvního července 1917 zahájil generál A. Brusilov <strong>poslední ruskou</strong> ofenzívu za První světové války. Zpočátku se podařilo armády Trojspolku překvapit a Rusové postupovali rychle vpřed. Ruská armáda však již byla v rozkladu a nepodařilo se tempo postupu udržet, takže již 16. července byli Rusové zastaveni a protiútok Trojspolku, který začal o tři dny později, je vytlačil z většiny dobytého území a způsobil jim veliké ztráty. O den později se A. Kerenský stal hlavou Prozatimní vlády, ale ani tuto vládu neuznávaly mnohé proudy ruské sociální demokracie, přestože v ní zasedali zástupci Eserů i Menševiků. Chaos v Rusku neušel pozornosti Němců, kteří prvního září zahájili na severním úseku východní fronty ofenzívu s cílem ovládnout Pobaltí. Němci zde poprvé vyzkoušeli speciální úderné oddíly, které s úspěchem prolomily ruské linie a umožnily následný postup na Rigu. Dne 9.  září zahájil nový ruský vrchní velitel L. Kornilov útok na Petrohrad, který měl zničit Petrohradský sovět, ale dělníci vedení bolševiky se odhodlaně postavili na odpor a útok do 14. září odrazili.</p>
+
+			<p>Ve dnech šestého a sedmého listopadu 1917 provedli bolševičtí revolucionáři vedení V. I. Leninem a L. D. Trockým v Petrohradě <strong>převrat</strong>, podařilo se jim svrhnout Prozatimní vládu a převzít moc do svých rukou. Již třetího prosince 1917 bylo uzavřeno příměří a v Brest Litevsku začala mírová jednání mezi Německem a Ruskem. Zatímco ruská delegace se snažila jednání prodloužit, Němci se snažili rychle uzavřít mír. Tyto rozdílné snahy vygradovaly v ukončení příměří a obnovení německého postupu v Pobaltí v následujícím roce, čímž si Němci vynutili rychlý <strong>podpis mírové smlouvy</strong>. Tato jednání měla ještě jeden efekt a tím bylo uzavření příměří mezi Rumunskum a státy Trojspolku dne devátého prosince 1917. Rumunská armáda byla totiž převážně vytlačena ze svého území a bez ruské pomoci nemohla pokračovat v boji.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Italská fronta počátkem roku 1917 probíhala na téměř stejných místech jako začátkem války. Specifikem zdejšího bojiště byl <strong>horský terén</strong>, který zabíral většinu území na kterém se boje odehrávaly a velmi zvýhodňoval obránce, což byl jeden z hlavních důvodů italských neúspěchů v předchozích letech na tomto bojišti. Italské vrchní velení se však nevzdávalo svého cíle, kterým byl přístav Terst (italsky Trieste) a tak dne 12. května 1917 po mohutné dělostřelecké přípravě začala 10. <strong>bitva na řece Soči</strong>. Boje trvaly až do 8. června 1917 a Italové při nich ztratili 160 000 vojáků, kteří padli, byli nezvěstní, zranění nebo zajatí. Rakousko-uherské ztráty dosáhly výše 75 000 vojáků, ale postup byl minimální.</p>
+
+			<p>Již 18. srpna 1917 udeřila italská armáda znovu silou 52 divizí, které podporovalo 5000 děl, ale opět se nepodařilo rakousko-uherské linie prolomit. Ztráty v 11. bitvě na řece Soči dosáhly 166 000 vojáků italských a 85 000 vojáků rakousko-uherských. I přes toto vítězství muselo rakousko-uherské velení konstatovat, že jeho síly na této frontě jsou bez záloh a vyčerpány, takže požádali německou armádu o pomoc, kterou jim Němci nejen okamžitě přislíbili, ale také poslali. Tato pomoc sestávala z několika pěších divizí, ale hlavně sem Němci poslali svoje speciální úderné jednotky, které se tak osvědčily na Východní frontě. Dne 24. října 1917 ohlásily 12. bitvu na řece Soči výbuchy tříštivých a plynových granátů, ale tentokrát byli cílem ofenzívy Italové. Německým a rakousko-uherským jednotkám se podařilo Italy překvapit. Italové byli překvapeni náhlostí útoky, ale také zjištěním, že jejich plynové masky jsou proti nepřátelskému plynu neúčinné. Německé speciální útočné oddíly prolomily italskou obrannou linii a otevřely pěším divizím cestu do hloubky italské obrany, přičemž silně opevněné pozice nepřítele byly obcházeny. Již druhý den ofenzívy postoupili útočníci o 24 kilometrů a přinutili italské vrchní velení pomýšlet na ústup na řeku Tagliamento, ale chaos u Italů byl takový, že rozkaz k ústupu byl vydán až 27. října 1917, takže italské jednotky začaly budovat své nové obranné pozice dost pozdě. Tohoto zpoždění využily armády Trojspolku, které druhého listopadu 1917 zahájily útok, kterému italská obrana neodolala a Italové byli nuceni ustoupit až na obrannou linii na řece Piavě. Boje trvaly až do 12 listopadu 1917 a italská armáda v nich ztratila 30 000 mrtvých a zraněných, ale 270 000 italských vojáků bylo zajato, takže 12. bitva na řece Soci známá též jako bitva u <strong>Caporetta</strong> byla pro Itálii skutečnou katastrofou. Ztráty Trojspolku během této ofenzívy činily 20 000 vojáků, což je minimum v porovnání s nepřítelem.</p>
+
+			<p>Ofenzíva Trojspolku na Italské frontě se zastavila před řekou Piavou a to kvůli vzrůstající italské obranně a také z důvodu příliš dlouhých zásobovacích linií Trojspolku. Postup armád Trojspolku o 96 kilometrů ohrozil celou severní Itálii. Italská vláda se rozhodla vyměnit vrchního velitele a tak byl generál L. Cadorna, který naplánoval a vedl všechny předchozí operace na Italské frontě, nahrazen generálem A. Diazem. Britové a Francouzi poslali Italům na pomoc několik divizí a hlavně byl pátého listopadu 1917 vytvořen <strong>Vrchní válečný výbor</strong>. Tento orgán byl tvořen vůdci nebo reprezentanty Británie, Francie, Itálie a Spojených států amerických a jeho cílem bylo koordinovat válečné úsilí států Trojdohody. Bojovalo se i na Jadranském moři, kde se dne 15. května 1917 rakousko-uherské loďstvo pokusilo prorazit námořní blokádu.Výsledkem tohoto úsilí byla bitva v <strong>Otrantské úžině</strong>, která se stala největším námořním střetnutím na Jadranu za První světové války, přestože se jí zúčastnilo pouze několik lehkých křižníků a torpédoborců.</p>
+
+			<p><strong>Řecká fronta</strong></p>
+			<p>Tato fronta vznikla již v roce 1916, tedy ještě před vstupem Řecka do války. Po vytlačení srbské armády z území Srbska a její evakuaci na ostrov Korfu začaly v jižním Řecku přistávat jednotky Trojdohody a po konsolidaci pozic tam byla přesunuta i srbská armáda. Počátkem května 1917 se velitel vojsk Trojdohody francouzský generál M. Sarrail již cítil dostatečně silný k útoku a tak 9. května jeho armáda čítající cca 600 000 srbských a francouzských vojáků zaútočila do Makedonie, kterou okupovala bulharská armáda. Ofenzíva byla ukončena již 14. května, protože útočící divize již přišly o 14 000 vojáků a nebylo dosaženo téměř žádného postupu. Dne 12. června 1917 byl řecký král Konstantin I., který byl bratrancem německého císaře Viléma II., donucen k abdikaci a na řecký trůn nastoupil jeho druhý syn Alexander. Nový řecký král choval sympatie k Trojdohodě, takže již krátce po korunovaci dovolil jednotkám Trojdohody postoupit do Thessaly v severním Řecku. Dne 27. června 1917 <strong>vyhlásilo Řecko válku státům Trojspolku</strong>. Dne 20. července vyslovila srbská vláda souhlas s Paktem z Korfu čímž položila základ budoucímu Království Srbů Chorvatů a Slovinců. Stát měl být koncipován jako monarchie a vládnout měla srbská královská rodina.</p>
+
+			<p><strong>Turecké fronty</strong></p>
+			<p>Po krachu Dardanelské operace změnili Britové a Francouzi válečnou strategii a pokusili se Turecko porazit nepřímou cestou. K srdci Turecka postupovaly <strong>dvě armády</strong>. První armádou byla britská armáda v Egyptě pod velením generála sira A. Murrayho, která již 8. ledna 1917 zahájila útok na Sinajský poloostrov a zvítězila nad Turky v bitvě u Magrunsteinu, čímž si otevřela cestu do Palestiny. Nejbližším strategickým cílem této armády byl Jeruzalem. Dne 26. března 1917 zahájili Britové postup do Palestiny a pokusili se prorazit opevněnou linii Gaza – Beršaba. Tento útok, kterého se účastnilo cca 16 000 britských vojáků však musel být brzy zastaven, protože byl špatně naplánován, spolupráce mezi britskou pěchotou a dělostřelectvem nefungovala dostatečně a Britové trpěli nedostatkem vody, takže po ztrátě 4 000 mužů generál sir A. Murray útok zastavil. Další britský pokus prolomit do Palestiny přišel dne 17. dubna a trval dva dny. V těchto čtyřech dnech ztratili Britové 6 500 mužů a nedosáhli téměř ničeho. Obě střetnutí jsou známé jako první a druhá <strong>bitva u Gazy</strong> a měly vliv na britskou velitelskou strukturu v oblasti, neboť 29. června 1917 byl generál sir A. Murray nahrazen ve funkci generálem E. Allenbym. Nový britský velitel okamžitě zahájil přípravy na další útok, který 31. října provedl a střetutí je známé jako třetí bitva u Gazy. Allenbymu se však díky lepší taktice podařilo dobýt Beršabu, čímž se celá turecká obranná linie zhroutila a turecké divize byly nuceny ustupovat na sever. Allenby dlouho nečekal a již 13. listopadu pokračoval v postupu, který ho 11. prosince přivedl do Jeruzaléma.</p>
+
+			<p>Dalším tureckým válčištěm byla Mezopotámie, kde se Britové pokoušeli <strong>postoupit na Bagdád</strong>. Dne 22. února 1971 zahájil velitel britských vojsk v Mezopotámii generál sir F. Maude útok na turecké jednotky u místa známého jako Kut-el-Amara. Během několika dnů se Britům, především díky lepší taktice, podařilo prolomit turecké linie. Již 11. března pokračoval britský postup, který po třech dnech bojů přivedl Brity do Bagdádu. Iniciativní generál sir F. Maude chtěl pokračovat v postupu, ale příchod letního počasí s vysokými teplotami jakýkoliv postup větších jednotek téměř vylučoval. Oživení nastalo na této frontě až dne 27. září, kdy postupující Britové svedli s Turky vítěznou bitvu u Ramadi, čímž vytlačili tureckou armádu ze střední Mezopotámie. Dalším strategickým cílem britské armády na tomto válčišti byl Mosul, neboť se tam těžila ropa, která už v té době měla velký význam. Velkou ztrátou pro Trojdohodu na tomto válčišti byl generál sir F. Maude, který zemřel dne 18. listopadu na choleru. Novým velitelem britských vojsk se stal generál sir W. Marshall.</p>
+
+			<h5>Poslední válečný rok 1918</h5>
+			<p><strong>Stručný souhrn</strong></p>
+			<p>V tomto posledním válečném roce podniklo Německo poslední pokus definitivně zvítězit, protože již nemohlo déle pokračovat ve válce. Konečné vítězství mělo být dosaženo soustředěným úderem téměř celé německé armády na západě, neboť již od podzimu minulého roku probíhala mírová jednání s novými vládci Ruska. Bolševici sice mírová jednání protahovali, ale ruská armáda už byla v takovém stupni rozvratu, že nebyla schopná ofenzivní akce, takže Němci stahovali své divize ještě před podpisem mírové smlouvy. Mír byl nakonec uzavřen dne 3. března 1918 v Brestu Litevském. Tímto mírem se bolševici vzdali kontroly nad Ukrajinou, Finskem, Litvou, Lotyšskem, Estonskem, Polskem, Kavkazem a oblastmi, které kontrolovali Bělogvardějci. Přestože Rusko podpisem Brestlitevského míru vystoupilo z První světové války, zbraně na východě Evropy hřměly dál. Již bolševickým převratem ve dnech 6. a 7. listopadu 1917 začala Ruská občanská válka, která byla ukončena až roku 1920 vítězstvím bolševiků a nastolením jejich vlády téměř na celém území bývalého carského Ruska. Odpůrci bolševiků zvaní Bělogvardějci nebo Bílí Rusové i s jejich zahraničními podporovateli byli vojensky poraženi a museli ze země odejít.</p>
+			
+			<p>Na západní frontě soustředili Němci většinu své armády a zástupce náčelníka generálního štábu německé armády E. Ludendorff naplánoval na rok 1918 sérii ofenzív, které měly zničit britskou a francouzskou armádu dříve než ve větším počtu dorazí americké posily. Série ofenzív však neměla očekávaný účinek a když ztráty Němců přesáhly 500 000 vojáků, byl E. Ludendorff nucen svoje útoky zastavit. V druhé půli roku 1918 převzali iniciativu Britové, Francouzi a Američané a jejich společná ofenzíva zatlačila Němce z téměř všech dobytých území, takže na podzim 1918 se fronta začala přibližovat k hranicím Německa.</p>
+
+			<p>Zbylí členové a spojenci Trojspolku na tom počátkem roku 1918 byli ještě hůře než Německo, které sice utrpělo velké lidské ztráty a díky blokádě byla zásobovací situace v samotném Německu dosti napjatá, ale stále si uchovávalo bojeschopnost a hlavně víru ve vítězství. Hlavní spojenec Německa Rakousko-Uhersko bylo velmi vyčerpáno hospodářsky, ale hlavním problémem byl morální rozklad armády Rakouska-Uherska, který byl způsoben nejen válečnými ztrátami, ale hlavně neochotou vojáků některých národů Rakousko-uherské říše dále bojovat za rod Habsburků.V květnu 1918 byla uzavřena smlouva ve Spa (v Belgii), která připravila Rakousko-Uhersko o většinu jeho státní suverenity, takže se stalo pouhým vazalem Německa. Rakousko-uherská armáda sice podnikla pokus překročit řeku Piavu, ale Italové ho úspěšně odrazili a spojený útok italských, britských a francouzských jednotek, který přišel o několik měsíců později, znamenal pro tohoto člena Trojspolku katastrofu, ze které se již jeho armáda nevzpamatovala. Osmanská říše, která na počátku války měla v plánu dobýt Suez a pak obnovit svou bývalou velikost, byla počátkem roku 1918 u konce svých sil. Britské armády postupovaly v Sýrii i Mezopotámií a turecká armáda již měla sil jen ke zpomalování tohoto postupu. Vzhledem k uzavření příměří a pak míru s Ruskem mohli Turci odvolat mnoho jednotek z Arménie a zpomalovat britský postup. Posledním spojencem Trojspolku bylo Bulharsko, jehož armády pomohly zničit Srbsko a stály na hranicích Řecka. Nový velitel spojených sil Trojdohody v Řecku zahájil na hranicích této země útok a na bulharské armády a podařilo se mu je na hlavu porazit, takže Bulharsko začalo jednat o míru.</p>
+
+			<div class="obrazek-text" style="margin-left: 5px;">
+				<img src="wilson.jpg" class="index-img">
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Woodrow Wilson, prezident USA
+				</div>
+			</div>
+
+			<p>Iniciativa ukončit válku mírovým způsobem vzešla od prezidenta Spojených států amerických W. Wilsona, který 8. ledna 1918 v projevu k americkému Kongresu vyhlásil svůj 14 bodový program jehož základem byly principy kolektivní bezpečnosti, národního sebeurčení a řešení sporů mezi státy vyjednáváním. Příměří byla uzavírána postupně. Nejprve dne 30. září uzavřelo příměří Bulharsko po něm následovalo dne 30. října 1918 příměří s Osmanskou říší, 4. listopadu 1918 podepsalo příměří Rakousko-Uhersko a konečně 11. listopadu 1918 podepsalo příměří Německo, které již v tu dobu nebylo císařstvím, neboť Vilem II. dne devátého listopadu 1918 abdikoval.</p>
+
+			<p><strong>Západní fronta</strong></p>
+			<p>Počátkem roku 1918 byla fronta na západě klidná a téměř nic nenasvědčovalo tomu, že již za pár měsíců zde dojde k těžkým bojům, protože německé jednotky byly již dosti vyčerpány a především se pomalu rozmáhala demoralizace, která byla způsobena hrůzami zákopové války. Němci však od podzimu 1917 přisunovaly posily z východu, které tvořili zkušení válečníci. Zástupce náčelníka generálního štábu německé armády E. Ludendorff vypracoval plán operace Michael, která měla zničit síly Trojdohody ve Francii. Dne 21. března 1918 začal německý útok na frontě široké 80 km od Arrasu až ke St. Quentinu a La Fere a byl ohlášen palbou z více jak 6000 děl. Tento úsek fronty bránily britské síly Páté armády a Třetí armády. Překvapující německý útok prolomil britské pozice a zcela zničil britskou Pátou armádu. O dva dny později začali Němci ostřelovat Paříž z děl ráže 210 mm, která pro tento účel vyrobili a přestože toto ostřelování Paříže nemělo příliš velký vojenský význam, zemřelo při něm 256 lidí a 620 bylo zraněno. Ostřelování trvalo až do 9. srpna 1918. Situace začínala být pro vojska Trojdohody kritická, takže se sešel Vrchní válečný výbor a velitelem všech vojsk Trojdohody na západě byl jmenován francouzský generál F. Foch. Generálu Fochovi se během pár dní podařilo zastavit německý postup a stabilizovat frontu, ale německá armáda postoupila zhruba o 64 km do nitra Francie. Další německý útok přišel 9. dubna 1918 a byl opět veden proti Britům, ale tentokrát na severním úseku poblíže hranic s Belgií u řeky Lys. Němcům se opět podařilo prolomit britské linie a situace začínala být opět kritická, ale britský velitel polní maršál sir D. Haigh dokázal zastavit britský ústup a tím získat několik cenných dní, aby mohly dorazit posily. Dne 17. dubna zastavily britské a francouzské jednotky německý postup v této oblasti a přestože se zde bojovalo až do konce měsíce a ztráty každé z válčících stran dosáhly 100 000 vojáků, nebyl již v tomto sektoru německý postup obnoven.</p>
+
+			<p>Třetí německá ofenzíva na západě v roce 1918 začala dne 27. května a jejím cílem byly francouzské jednotky u řeky Aisny. Němcům se opět podařilo prolomit nepřátelské pozice a postoupit až k řece Marně, ale byli 30. května zastaveni spojenými francouzskými a americkými jednotkami. Dne 4. června 1918 Němci tento útok zastavili. Ztráty každé ze stran byly 125 000 vojáků a německá vojska dobyla území do hloubky 32 kilometrů a v šířce 48 kilometrů. V pořadí čtvrtá německá ofenzíva na západě v tomto roce začala dne 9. června útokem na francouzské jednotky podél řeky Metzy, která je přítokem řeky Oisy. Francouzi však o připravovanéím útoku dobře věděli, protože byli informováni od německých dezertérů a tak francouzský generál G. Humbert nařídil svému dělostřelectvu zahájit palbu těsně před útokem do německé první linie, kde se soustřeďovali členové speciálních úderných oddílů. Ani toto opatření však nezabránilo Němcům prolomit francouzské linie a postupovat. Němci byli zastaveni o čtyři dny později francouzskými a americkými protiútoky.</p>
+
+			<p>Začínalo být jasné, že ani koncentrovaná síla celé německé armády nemá šanci vyhrát do konce roku válku, ale zástupce náčelníka generálního štábu německé armády E. Ludendorff se ještě nevzdával naděje a naplánoval pátou německou ofenzívu tohoto roku. Tento útok začal dne 15. července 1918 a směřoval na francouzské jednotky v Champagni. Němcům se opět nepodařilo nepřítele překvapit, neboť Francouzi měli informace od leteckého průzkumu a také od německých dezertérů a tak francouzská děla opět zahájila palbu těsně před útokem do shromážděných německých speciálních úderných oddílů. Německá ofenzíva byla zastavena již 17. července 1918 a E. Ludendorff byl nucen přiznat porážku a stáhnout svoje poničené divize do obranných postavení, aby zkrátil frontu, neboť se očekávala ofenzíva Trojdohody. Ta začala 18. července 1918 v Champagni, spojené síly Trojdohody svedly s Němci druhou bitvu na Marně a donutily je k ústupu. Větší válečné operace v tomto prostoru utichly 6. srpna 1918 a německou armádu stála tato bitva 168 000 mužů. Dne 8. srpna 1918 začali Britové společně s Francouzi ofenzívu u Amiensu, kterou podporovalo cca 400 tanků. Počáteční útok byl velmi úspěšný a Němci byli vrženi 16 kilometrů zpět. Boje pokračovaly až do 12. srpna a německá armáda při nich ztratila 75 000 vojáků, z nichž se polovina vzdala. Již 21. srpna obnovila Trojdohoda útok v tomto sektoru fronty a po několika dnech bojů donutila Němce ke generálnímu ústupu na Hindenburgovu linii, odkud svoje ofenzívy v březnu 1918 začali.</p>
+
+			<p>Dne 26. září 1918 zaútočila první armáda Amerických expedičních sil pod velením generála J. Perschinga společně s francouzskou Čtvrtou armádou na německé oddíly severně od Verdunu, čímž Američané začali ofenzívu Trojdohody nazvanou Mása-Ardeny. Němci byli dobře zakopáni ve třech liniích obrany, ale silám Trojdohody se do 3. října 1918 podařilo dobýt dvě z těchto opevnněných linií, čímž udělali hluboký vlom do Hindenburgovi linie. Dne 27. září 1918 zaútočily dvě britské armády čítající 42 divizí na Cambrai a St Quentin, podařilo se jim prolomit německé linie a postoupit až na předměstí Cambrai. O den později se k ofenzívě připojila Flanderská armádní skupina pod velením belgického krále Alberta a zaútočila v okolí města Ypry. I tento útok byl úspěšný a spojené belgické, britské a francouzské jednotky postupovaly. Dne 29. září se k ofenzívě ještě připojila britská Čtvrtá armáda a francouzská První armáda; s podporou několika amerických divizí se těmto silám podařilo dobýt Hindenburgovu linii a zatlačit Němce až na řeku Sellu.</p>
+
+			<p>V důsledku postupu armád Trojdohody kontaktoval dne 6. října 1918 německý kancléř M. Bádenský amerického prezidenta W. Wilsona a požádal jej o příměří, které by bylo založeno na Wilsonových 14 bodech z 8. ledna 1918. Dne 14. října 1918 zahájily spojené armády Francie a Spojených států amerických druhou fázi ofenzívy Mása-Ardeny, podařilo se jim dosáhnout vytyčených cílů a zdolat německou obranu. O tři dny později přešli do útoku Britové na řece Selle a do konce měsíce října vytlačili německé jednotky až za řeku Šeldu a získaly 20 000 zajatců. K útoku se připojila i Flanderská skupina vojsk pod velením belgického krále Alberta. Dne 29. října 1918 vypuklo v německé námořní základně Kiel povstání námořníků, kterého se zúčasnilo cca 40 000 německých námořníků a nepokoje se začaly šířit v celém Německu. Důvodem k této rebelii byl plán nového velitele německého loďstva admirála F. von Hipppera, který chtěl podniknout sebevražedný výpad proti anglickému pobřeží. Dne 1. listopadu 1918 začala třetí a poslední fáze ofenzívy Mása-Ardeny. Útočícím Američanům i Francouzům se průlom do nepřátelské obrany podařil a plynule postupovali vpřed, ale 11. listopadu musela být ofenzíva ukončena, protože bylo podepsáno příměří. Jednání o příměří mezi Německem a Trojdohodou začala 7. listopadu 1918 . Na těchto jednáních bylo Německo zastoupeno delegací pod vedením M. Erzbergera a za Trojdohodu mluvil maršál F. Foch. Podmínky příměří byly nekompromisní. Německá armáda se musela co nejrychleji stáhnout ze všech dobytých území včetně Alsaska-Lotrinska a západního břehu Rýna. Němci museli odevzdat vítězům své vojenské zásoby, mezi nimiž bylo i 5000 děl a 25 000 kulometů a také internovat svoje válečné loďstvo a hlavně ponorky v přístavech Trojdohody. Německý císař Vilém II. abdikoval dne 9. listopadu a spěšně odjel do exilu v Holandsku. Dne 11. listopadu v 11 hodin bylo v železničním vagonu v Compiégne podepsáno příměří a zbraně na Západní frontě na více jak 20 let utichly.</p>
+
+			<p><strong>Východní fronta</strong></p>
+			<p>Počátkem roku 1918 panovalo na Východní frontě příměří, které bylo vyhlášeno již 3. prosince 1917 v Brestu Litevském, kde jednali delegace Německa a Ruska o mírové smlouvě. Bolševici vedení L. D. Trockým tato jednání záměrně protahovali až německé delegaci došla dne 18. února 1918 trpělivost, příměří bylo ukončeno a německé armády pokračovaly v postupu na Ukrajinu a Petohrad. Bolševici neměli v té době srovnatelnou vojenskou sílu, protože Rudá armáda byla v plenkách a tak jim nezbylo nic jiného než uzavřít mírovou smlouvu, která byla podepsána dne 3. března 1918 v Brestu Litevském.</p>
+
+			<p>Boje na východě tím však zdaleka nekončily, protože kromě Ruské občanské války se začalo bojovat i ve Finsku, které v listopadu roku 1917 vyhlásilo nezávislost. Dne 28. ledna 1918 provedli finští sociální demokraté pomocí svých milic, které byly známé jako „rudé gardy“ státní převrat a prohlásili Finsko za socialistickou dělnickou republiku. Hlava dosavadního finského státu P. Svinhufund uprchl do Vaasy v západním Finsku, kde měl situaci pod kontrolou generál K. Von Mannerheim, pod jehož velením se seskupily tzv. „bílé gardy“ neboli odpůrci finských socialistů. P. Svinhufund požádal o pomoc Německo, kterou mu Němci poskytli a tak dne 3. dubna 1918 přistála ve Finsku německá Baltická divize, zapojila se do boje proti rudým gardám a dne 13. dubna 1918 dobyla finské hlavní město Helsinky. Ve dnech 28. a 29. dubna 1918 dosáhly bílé gardy pod vedením K. von Manneheima přesvědčivého vítězství nad rudými gardami u Vyborgu, čímž definitivně zlomily moc finské sociální demokracie a 15. května 1918 byla finská občanská válka ukončena. Dne 7. května 1918 podepsali zástupci Německa a Rumunska Bukurešťskou dohodu, která ukončila válečný stav mezi oběma zeměmi, ale tento mír vydržel jen do 10. října 1918, kdy se Rumunsko opět postavilo na stranu Trojdohody.</p>
+
+			<p>Boje v Rusku pokračovaly dále a zapojily se do nich státy Trojdohody, které poskytovaly meteriální, ale i vojensou podporu Bělogvardějcům. V rámci této pomoci okupovali dne 23. června 1918 Britové a Francouzi přístav Murmaňsk a Američané o měsíc později přístavy Archangelsk a Vladivostok. I Osmanská říše se pokusila urvat kus z rozpadajícího se impéria, takže po zhroucení ruské fronty v Arménii Turci rychle postoupili a 14. září 1918 jejich oddíly obsadily Baku, které mělo důležitý ekonomický význam, protože se tam těžila ropa. Velkou kapitolu do dějin Ruské občanské války napsali i Čechoslováci. V Rusku bylo po uzavření příměří cca 40 000 bývalých vojáků Rakousko-Uherska, z nichž někteří se již zúčastnili bojů proti armádám Trojspolku a byli organizováni v československých legiích. Tito vojáci po uzavření příměří a pak i míru mezi Ruskem a Německem nemohli pokračovat v boji a jejich přáním bylo vrátit se domů. Nemohli však zvolit západní cestu, protože po překročení ruských hranic by byli zatčeni a souzeni za dezerci. Rozhodli se tedy odjet přes Vladivostok do Francie, kde byla organizována další část československé exilové armády. Bolševici se však rozhodli československé legie nepropustit, ale naopak je rozpustit a začlenit do Rudé armády. Po několika měsících komunistické agitace se jim však podařilo přesvědčit jen minimum legionářů a když se pokusili rozpustit legie silou, legionáři odzbrojili místní ruské jednotky a rozhodli se vynutit si cestu bojem. Vladivostok leží až na pobřeží Pacifiku, takže jim nezbývalo než přejet celé Rusko a jediná cesta, kterou bylo možno v dohledné době přesunout desetitisíce můžu i se zbraněmi, byla Transsibiřská magistrála. Československé legie ovládly Transsibiřskou magistrálu a pronásledovány Rudou armádou se probily až do Vladivostoku, kde byly naloděny a odsunuty do Francie.</p>
+
+			<p><strong>Italská fronta</strong></p>
+			<p>Na počátku roku 1918 probíhala tato fronta úplně jiným územím než předcházející roky. V důsledku drtivé porážky italských vojsk u Caporetta postoupily armády Rakouska-Uherska až k řece Piavě. I touto frontou však již začínala hýbat politika, která způsobila morální rozklad armády Rakousko-Uherska. 1. února 1918 vypuklo povstání námořníků na hlavní základně Rakousko-uherského loďstva v Kotoru. Rebélie byla nakonec potlačena, ale byl to jasný signál, že morálka rakousko-uherského vojáka je otřesena. Dne 9. června se námořnictvo Rakouska-Uherska pokusilo prolomit námořní blokádu, ale nepodařilo se mu to a ještě utrpělo těžké ztráty. Dne 15. června 1918 zahájila rakousko-uherská armáda svoji poslední ofenzívu s cílem překročit řeku Piavu a postoupit dále na města Verona a Padova. Ofenzíva trvala týden a útočící jednotky se pak stáhly zpět, aniž dosáhly nějakých územních zisků, ale na bojišti zanechaly 150 000 vojáků z nichž 24 000 se vzdalo. Nový italský velitel A. Diaz se rozhodl nepronásledovat ustupujícího nepřítele a raději pokračoval ve shromažďování vojsk a zásob na vlastní ofenzívu.</p>
+
+			<p>Dne 23. října 1918 zaútočily síly Trojspolku na Italské frontě a brzy se jim podařilo překročit řeku Piavu a postupovat na východ. Vojenská situace Rakouska-Uherska byla katastrofální a Karel I. zrušil dne 26. října spojeneckou smlouvu s Německem. Zlomovou událostí ofenzívy bylo italské vítězství u Vittoria Veneta dne 30. října. Ofenzíva oficiálně skončila 3. listopadu 1918 a Rakousko-Uhersko v ní ztratilo cca 300 000 vojáků, z nichž se 38 000 vzdalo. Tyto dvě vojenské katastrofy byly rozsudkem smrti pro armádu i celé Rakousko-Uhersko a již třetího listopadu požádala vláda Rakouska-Uherska Andrássyho nótou  o příměří, které bylo podepsáno 4. listopadu 1918. O týden později se císař Karel I. vzdal trůnu a tak již nic nestálo v cestě vlně nacionalismu, která rozdělila bývalé Rakousko-Uhersko na několik menších států. Ještě před abdikací Karla I. dne 28. října vyhlásilo samostatnost Československo, o den později Chorvatský sněm zrušil veškeré svazky s Uherským královstvím a 31. října se v Uhrách chopil moci hrabě Karoly, takže Karel I. podepisoval příměří za již fakticky neexistující stát.</p>
+
+			<p><strong>Řecká fronta</strong></p>
+			<p>Na této frontě soustřeďovala Trojdohoda svoje síly k útoku, aby odčinila neúspěch z minulého roku. V červenci byl velitele vojsk Trojdohody jmenován francouzský generál F. d´Esperey, který již 15. září zahájil ofenzívu vojsk Trojdohody na tomto válčišti. V čele útoku stály srbská První a Druhá armáda, které byly po evakuaci na ostrov Korfu přepraveny do Řecka. Proti mnohonárodnostním silám Trojdohody stála na hranicích Řecka bulharská armáda. Počáteční útok byl úspěšný, bulharská obrana byla prolomena a když dne 29. září padlo Skopje, zhroutila se bulharská armáda úplně. Hned příští den bylo uzavřeno příměří a Bulharsko vystoupilo z války.</p>
+
+			<p><strong>Turecké fronty</strong></p>
+			<p>Pro Osmanskou říši nezačal rok 1918 z vojenského hlediska moc dobře, protože jediné dvě moderní lodě, které mělo k dispozici – německý bitevní křižník Goeben a taktéž německý lehký křižník Breslau – vjely dne 20. ledna do ruského minového pole, přičemž se Breslau potopil a Goeben byl vyřazen z bojů do konce války. Vzhledem ke zhroucení ruské armády postupovaly turecké jednotky rychle Arménií a došly až do ropného střediska Baku. Dne 19. září 1918 obnovil generál sir E. Allenby britský postup v Palestině a v bitvě u Megida Turky na hlavu porazil. Britská armáda měla v té době nad tureckou armádou převahu ve všech důležitých aspektech a navíc za tureckými liniemi působili Arabové pod vedením britského styčného důstojníka T. E Lawrence, kteří útočili na železnici, po které Turci přepravovali zásoby. Turecké linie byly rychle prolomeny a Pouštní jízdní sbor postoupil během tří dnů o 112 kilometrů a 1. října 1918 stáli Britové před Damaškem. K jejich velkému překvapení je však nevítala turecká palba, ale arabští partyzáni, kteří pod vedením britského styčného důstojníka T. E Lawrence Damašek dobyli. Další den následoval pád Bejrůtu a 25. října dobyli Britové Aleppo vzdálené 320 kilometrů. Již 14. října rezignoval Výbor pro jednotu a pokrok, jehož členové byli spíše známí jako Mladoturci a Osmanská říše začala hledat cestu k příměří, které bylo vyhlášeno 30. října 1918.</p>
+		</div>
+	</div>	
+</section>
+
+<section>
+	<!-- Kontakty -->
+	<div class="kontakty">
+		<div class="container pt-4">
+			<div class="row">
+				<div class="col-md-4 najdete">	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Najdete nás na:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						<a href="https://www.facebook.com/prvnisvetovavalka" class="najdete">
+							<img src="facebook_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="instagram_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="twitter_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Odkazy:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="odkaz" href="https://cs.wikipedia.org/wiki/První_světová_válka">Wikipedie</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="odkaz" href="https://www.dejepis.com/ucebnice/prvni-svetova-valka-prvni-a-druha-etapa-valky-1914-1916/">dějepis.com</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Kontakt:</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="mailto:velkavalka@fanklub.cz?subject=valkasupr" class="odkaz">velkavalka@fanklub.cz</a>
+							<p>+420 758 642 224</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</section>
+
+<footer class="pata">
+	<div class="container">
+			<div class="row">
+				<p class="col-sm-12" style="margin-top: 27.5px;">Werner Matěj, 1ITA</p>
+			</div>
+		</div>
+</footer>
+	
+
+</body>
+</html>
