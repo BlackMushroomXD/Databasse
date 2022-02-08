@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+    <title>Databaϟϟe</title>
+    <link rel = "icon" href ="zatimlogo.jpg" type = "image/x-icon"> <!--sem najebat ikonu-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="logo">
+                    <img src=""> <!--logo v levém rohu-->
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="nadpis">
+                    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Databaϟϟe</h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar">
+                        <a href="databasse.html">⌂</a>
+                        <a href=".html">Vězni</a>
+                        <a href=".html">Sprcha</a>
+                        <a href=".html">Záznamy</a>
+                        <a href="dozorci.html">Dozorci</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="text">
+                        <p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p> <!--Ten text je úplně vymrdanej-->
+                        <p>uuuuuuuuuuuuudhfsgugfsugfusgfuszgdfgsdgfuizdfggfzgfdgfzzgfS</p>
+                        <p>jhdfshfsfgsfgsfgssghfgsg</p>
+                        <p>hsfhsgfshgfsgfsfhsdfsfsfsfsfsf</p>
+                    </div>
+                    <div id="map"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="evidace">
+                        <h5>Zaeviduj do databáze</h5>
+                        <label>Jméno:</label><br>
+                        <input type="text" id="jmeno"><br><br>
+                        <label>Přijmení:</label><br>
+                        <input type="text" id="prijmeni"><br><br>
+                        <label>Pohlaví:</label><br>
+                        <input type="radio" name="Muž" value="muž">Muž<br>
+                        <input type="radio" name="Žena" value="žena">Žena<br><br>
+                        <label>Osud:</label> 
+                        <input type="radio" name="Zavražděn" value="zavražděn">Zavražděn<br>
+                        <input type="radio" name="Přežil" value="přežil">Přežil<br>     
+                        <button type="button" id="tlacitko1">Přidej!</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <footer>iiii</footer> <!--sem cool text-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+        
+        const tabor = { lat: 50.036, lng: 19.185 };
+       
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: tabor,
+        });
+        
+        const marker = new google.maps.Marker({
+          position: tabor,
+          map: map,
+        });
+      }
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2hdYGNaGp7YqyCeoEJ_ZdMQcs9pOktpQ&callback=initMap">
+</script>
+</body>
+</html>
