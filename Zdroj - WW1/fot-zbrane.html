@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fotogalerie – Zbraně</title>
+	<link rel="stylesheet" href="velkavalka.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<link rel="icon" href ="icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header class="hlava">
+<!-- Menu pro mobil -->
+	<div class="kolaps">
+			<div class="mobilmenu"> 
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+			</div>		
+	</div>	
+	<div class="kolapsmenu">
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/historie.html">Historie</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="kolaps">
+				<div class="col-md-12 kolapsnabid">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html">Fotogalerie</a>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("kolaps");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  	  coll[i].addEventListener("click", function() {
+  	 	this.classList.toggle("active");
+    	var kolapsmenu = this.nextElementSibling;
+    	if (kolapsmenu.style.maxHeight){
+      	  kolapsmenu.style.maxHeight = null;
+   	 	} else {
+     	  kolapsmenu.style.maxHeight = kolapsmenu.scrollHeight + "px";
+   		}
+ 	  });
+	}
+	</script>
+
+	<!-- Ikona -->
+	<div class="container">
+		<div class="mobilicon">
+			<a href="file:///C:/Users/werne/Desktop/Velká%20válka/index.html">	
+				<img src="icon.png">
+			</a>
+		</div>
+	
+
+	<!-- Header pro PC -->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/historie.html">Historie</a>
+				</li>
+				<li>
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+				</li>
+				<li class="drpdwn">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
+						<div class="drpdwn-menu">
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
+						</div>
+				</li>
+				<li class="prihlaseni">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+				</li>
+			</ul>
+		</div>
+	</div>		
+</header>
+
+<section>
+	<!-- Obrázek pro mobily -->
+	<div class="fot_zbrane-obr-maly"></div>
+	<!-- Obrázek pro větší obrazovky -->
+	<div class="fot_zbrane-obr-velky"></div>
+</section>
+
+<section>
+	<!-- Hlavní sekce -->
+	<div class="mainsection pt-3">
+		<div class="container">
+			<h4 style="color: white;">Zbraně 1. světové války</h4>
+		</div>
+
+			<div style="text-align: center;">
+				<h5>Pušky</h5>
+			</div>
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="M98G.jpg" target="_parent">
+						<img src="M98G.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Mauser 98</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="SteyrM95.jpg" target="_parent">
+						<img src="SteyrM95.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Steyr M95</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="Lee-Enfield303.jpg" target="_parent">
+						<img src="Lee-Enfield303.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Lee-Enfield .303</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="SpringfieldM1903.jpg" target="_parent">
+						<img src="SpringfieldM1903.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Springfield M1903</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie2">
+				<div class="galerie">
+					<a href="MosinNagant.jpg" target="_parent">
+						<img src="MosinNagant.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Mosin Nagant</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie2">
+				<div class="galerie">
+					<a href="Bertier.jpg" target="_parent">
+						<img src="Bertier.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Bertier</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie2">
+				<div class="galerie">
+					<a href="Carcano.jpg" target="_parent">
+						<img src="Carcano.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Carcano</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie2">
+				<div class="galerie">
+					<a href="Trenchgun.jpg" target="_parent">
+						<img src="Trenchgun.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Winchester</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; padding-top: 10px;">
+				<h5>Kulomety</h5>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="MG08.jpg" target="_parent">
+						<img src="MG08.jpg" width="800" height="500">
+					</a>
+					<div class="popis">MG 08</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="Vickers.jpg" target="_parent">
+						<img src="Vickers.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Vickers Mk. I</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="Maxim.jpg" target="_parent">
+						<img src="Maxim.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Maxim</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="lewisgun.jpeg" target="_parent">
+						<img src="lewisgun.jpeg" width="800" height="500">
+					</a>
+					<div class="popis">Lewis M1914</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; padding-top: 10px;">
+				<h5>Pistole</h5>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="lugerp08.jpg" target="_parent">
+						<img src="lugerp08.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Luger08</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="MauserC96.jpg" target="_parent">
+						<img src="MauserC96.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Mauser C96</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="m1911.jpg" target="_parent">
+						<img src="m1911.jpg" width="800" height="500">
+					</a>
+					<div class="popis">M1911</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="Webleyrev.jpeg" target="_parent">
+						<img src="Webleyrev.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Revolver Webley</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; padding-top: 10px;">
+				<h5>Plamenomety</h5>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="kleinflammenwerfer.jpg" target="_parent">
+						<img src="kleinflammenwerfer.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Kleinflammenwerfer</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="Wechselapparat.jpg" target="_parent">
+						<img src="Wechselapparat.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Wechselapparat</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="fwm16.jpg" target="_parent">
+						<img src="fwm16.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Flammenwerfer M.16</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="flameth.jpg" target="_parent">
+						<img src="flameth.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Použití plamenometů ve válce</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; padding-top: 10px;">
+				<h5>Tanky</h5>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="A7V.jpg" target="_parent">
+						<img src="A7V.jpg" width="800" height="500">
+					</a>
+					<div class="popis">A7V</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="MarkV.jpg" target="_parent">
+						<img src="MarkV.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Mark V</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="renaultft.jpg" target="_parent">
+						<img src="renaultft.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Renault FT-17</div>
+				</div>
+			</div>
+
+			<div class="respons-galerie">
+				<div class="galerie">
+					<a href="StChamond.jpeg" target="_parent">
+						<img src="StChamond.jpg" width="800" height="500">
+					</a>
+					<div class="popis">Saint-Chamond</div>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+	</div>	
+</section>
+
+<section>
+	<!-- Kontakty -->
+	<div class="kontakty">
+		<div class="container pt-4">
+			<div class="row">
+				<div class="col-md-4 najdete">	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Najdete nás na:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						<a href="https://www.facebook.com/prvnisvetovavalka" class="najdete">
+							<img src="facebook_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="instagram_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="twitter_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Odkazy:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="odkaz" href="https://cs.wikipedia.org/wiki/První_světová_válka">Wikipedie</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="odkaz" href="https://www.dejepis.com/ucebnice/prvni-svetova-valka-prvni-a-druha-etapa-valky-1914-1916/">dějepis.com</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Kontakt:</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="mailto:velkavalka@fanklub.cz?subject=valkasupr" class="odkaz">velkavalka@fanklub.cz</a>
+							<p>+420 758 642 224</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</section>
+
+<footer class="pata">
+	<div class="container">
+			<div class="row">
+				<p class="col-sm-12" style="margin-top: 27.5px;">Werner Matěj, 1ITA</p>
+			</div>
+		</div>
+</footer>
+</body>
+</html>
