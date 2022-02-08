@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auschwitz</title>
+	<link rel="stylesheet" href="velkavalka.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+  	<link rel="icon" href ="icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header class="hlava">
+<!-- Menu pro mobil -->
+	<div class="kolaps">
+			<div class="mobilmenu"> 
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+			</div>		
+	</div>	
+	<div class="kolapsmenu">
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/historie.html">Historie</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="kolaps">
+				<div class="col-md-12 kolapsnabid">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html">Fotogalerie</a>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 kolapsnabid">
+				<a href="file:///C:/Users/werne/Desktop/Velká%20válka/prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("kolaps");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  	  coll[i].addEventListener("click", function() {
+  	 	this.classList.toggle("active");
+    	var kolapsmenu = this.nextElementSibling;
+    	if (kolapsmenu.style.maxHeight){
+      	  kolapsmenu.style.maxHeight = null;
+   	 	} else {
+     	  kolapsmenu.style.maxHeight = kolapsmenu.scrollHeight + "px";
+   		}
+ 	  });
+	}
+
+	function initMap() {
+	
+	const tabor = { lat: 50.036, lng: 19.185 };
+   
+	const map = new google.maps.Map(document.getElementById("map"), {
+	  zoom: 4,
+	  center: tabor,
+	});
+	
+	const marker = new google.maps.Marker({
+	  position: tabor,
+	  map: map,
+	});
+  	}
+	</script>
+
+	<!-- Ikona -->
+	<div class="container">
+		<div class="mobilicon">
+			<a href="file:///C:/Users/werne/Desktop/Velká%20válka/index.html">	
+				<img src="icon.png">
+			</a>
+		</div>
+	
+
+	<!-- Header pro PC -->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/historie.html">Historie</a>
+				</li>
+				<li>
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/zajimavosti.html">Zajímavosti</a>
+				</li>
+				<li class="drpdwn">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
+						<div class="drpdwn-menu">
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
+							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
+						</div>
+				</li>
+				<li class="prihlaseni">
+					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+				</li>
+			</ul>
+		</div>
+	</div>		
+</header>
+
+<section>
+	<!-- Index obrázek pro mobily -->
+	<div class="index-obr-maly"></div>
+	<!-- Index obrázek pro větší obrazovky -->
+	<div class="index-obr-velky"></div>
+</section>
+
+<section>
+	<!-- Hlavní sekce -->
+	<div class="mainsection pt-3">
+		<div class="container">
+			<h4 style="color: white;">Auschwitz</h4>
+			<p><strong>Stručný souhrn</strong></p>
+
+			<p><strong>Auschwitz</strong> byl komplex německých nacistických koncentračních a vyhlazovacích táborů fungujících během druhé světové války na území anektovaném Třetí říší na jihozápadě Polska po jeho obsazení roku 1939. Nachází se v Osvětimi v Malopolském vojvodství v Polsku.</p>
+
+			<div class="obrazek-text">
+				<div id="map"></div>
+				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 10px;">
+					Auschwitz na mapě
+				</div>
+			</div>
+
+			<p>Koncentrační tábor Auschwitz sestával ze tří oddělených táborů, které byly římskými číslicemi označeny jako Auschwitz I, II a III. Auschwitz I, jenž byl původním koncentračním táborem, sloužil jako administrativní centrum celého komplexu a za dobu jeho existence v něm nalezlo smrt na 70 tisíc lidí, převážně etnických Poláků a sovětských válečných zajatců. Auschwitz II (Birkenau) byl vyhlazovacím táborem, ve kterém zemřelo nejméně 960 tisíc Židů, 75 tisíc Poláků a přibližně 19 tisíc Romů. Birkenau byl největším nacistickým vyhlazovacím táborem. Auschwitz III (Monowitz) sloužil jako pracovní tábor společnosti Buna-Werke.</p>
+
+			<p>Mimo hlavní tři tábory existovalo přibližně 40 pobočných táborů, z nichž se některé nacházely až desítky kilometrů od hlavních táborů, jejichž obsazenost se pohybovala od několika desítek po několik tisíc osob.</p>
+
+			<a href="file:///C:/Users/werne/Desktop/Velká%20válka/historie.html" style="color: #0ea30e;">Více se ale dozvíte zde.</a>
+
+		</div>
+	</div>	
+</section>
+
+<section>
+	<!-- Kontakty -->
+	<div class="kontakty">
+		<div class="container pt-4">
+			<div class="row">
+				<div class="col-md-4 najdete">	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Najdete nás na:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						<a href="https://www.facebook.com/prvnisvetovavalka" class="najdete">
+							<img src="facebook_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="instagram_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						<a href="" class="najdete">
+							<img src="twitter_icon.png" style="width: 25px; height: 25px;">
+						</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Odkazy:</h6>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_______________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="odkaz" href="https://cs.wikipedia.org/wiki/Auschwitz">Wikipedie</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 kont">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Kontakt:</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h6>_________________</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="mailto:kocentracnitabory@fanklub.cz?subject=koncentraksupr" class="odkaz">kocentracnitabory@fanklub.cz</a>
+							<p>+420 758 642 224</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</section>
+
+<footer class="pata">
+	<div class="container">
+			<div class="row">
+				<p class="col-sm-12" style="margin-top: 27.5px;">Werner Matěj, Šestořád Šimon, 2ITA</p>
+			</div>
+		</div>
+</footer>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2hdYGNaGp7YqyCeoEJ_ZdMQcs9pOktpQ&callback=initMap">
+</script>
+</body>
+</html>
