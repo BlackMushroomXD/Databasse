@@ -260,5 +260,29 @@
 			</div>
 		</div>
 </footer>
+
+<?php
+    if(isset($_POST["odeslat"])) {
+        $username = $_POST["prezdivka"];
+        $password = $_POST["heslo"];
+
+        $mysqli = new mysqli("localhost", "root", "", "databasse");
+        if($mysqli->connect_error) {
+            die("Verbindung zur Datenbank fehlgeschlagen");
+        }
+        $sql = "";
+        $sql = "INSERT INTO users (username, password) VALUES ('$username', $password)";
+        
+
+        
+        $res = $mysqli->query($sql);
+        if($res === TRUE) {
+            echo "Hinzugefügt!";
+        } else {
+            echo $mysqli->error;
+        }
+    }
+
+?>
 </body>
 </html>
