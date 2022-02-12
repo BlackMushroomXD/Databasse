@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Přihlášení</title>
+	<title>Registrace</title>
 	<link rel="stylesheet" href="velkavalka.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,7 +38,7 @@
 		<div class="row">
 			<div class="kolaps">
 				<div class="col-md-12 kolapsnabid">
-					<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fotogalerie.html">Fotogalerie</a>
+					<a href="fotogalerie.html">Fotogalerie</a>
 				</div>
 			</div>	
 		</div>
@@ -83,7 +83,7 @@
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="jmennyseznam.html">Jmenný seznam</a>
+					<a href="zajimavosti.html">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
 					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
@@ -101,68 +101,80 @@
 	</div>		
 </header>
 
-<section class="prihlaseni-sm">
-	<div style="background-color: #242424; height: 600px;">
+<section class="registrace-sm">
+	<div style="background-color: #242424; height: 700px;">
 		<div style="padding: 2.5%;">
-			<h3 style="color: #e6e6e6;">Přihlášení</h3><br>
+			<h3 style="color: #e6e6e6;">Registrace</h3><br>
 			<form>
+				<div class="nad-input">
+					<label for="jmapri">Jméno a příjmení:</label>
+				</div>
 				<div>
-					<div class="nad-input">
-						<label for="prezdivka">Přezdívka:</label>
-						<span style="float: right;">
-							<span>Nemáte účet?</span>	
-							<a href="registrace.php">Registrovat</a>
-						</span>
-					</div>
-					<div>
-						<input type="text" name="prezdivka" class="prezdivka-input">
-					</div>
-				</div><br>
+					<input type="text" name="jmapri" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label class="nad-input">Přezdívka:</label>
+				</div>
+				<div>
+					<input type="text" name="prezdivka" class="prezdivka-input">
+				</div>
 				<div class="nad-input">
 					<label for="heslo">Heslo:</label>
-					<span style="float: right;">
-						<a href="">Zapomněli jste heslo?</a>
-					</span>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo znovu:</label>
 				</div>
 				<div>
 					<input type="password" name="heslo" class="prezdivka-input">
 				</div><br><br>
 				<div>
 					<button type="submit" class="odesl-tlac-sm">Odeslat</button>
+				</div><br>
+				<div class="nad-input">
+					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
 				</div>
 			</form>
-		</div>	
+		</div>
 	</div>
 </section>
 
-<section class="prihlaseni-lg">
-	<div style="background-color: #242424; height: 700px; padding-top: 100px;">
+<section class="registrace-lg">
+	<div style="background-color: #242424; height: 775px; padding-top: 100px;">
 		<div class="prihlas-box">
-			<h3 style="color: #e6e6e6; padding-bottom: 50px;">Přihlášení</h3>
+			<h3 style="color: #e6e6e6;">Registrace</h3>
 			<form>
 				<div class="nad-input">
-					<label for="prezdivka">Přezdívka:</label>
-					<span style="float: right;">
-						<span>Nemáte účet?</span>	
-						<a href="registrace.php">Registrovat</a>
-					</span>
+					<label for="jmapri">Jméno a příjmení:</label>
+				</div>
+				<div>
+					<input type="text" name="jmapri" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label class="nad-input">Přezdívka:</label>
 				</div>
 				<div>
 					<input type="text" name="prezdivka" class="prezdivka-input">
-				</div><br>
-
+				</div>
 				<div class="nad-input">
 					<label for="heslo">Heslo:</label>
-					<span style="float: right;">
-						<a href="https://www.youtube.com/watch?v=bdu45sx2Pfw">Zapomněli jste heslo?</a>
-					</span>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo znovu:</label>
 				</div>
 				<div>
 					<input type="password" name="heslo" class="prezdivka-input">
 				</div><br><br>
-
-				<div style="padding: auto;">
+				<div>
 					<button type="submit" class="odesl-tlac-lg">Odeslat</button>
+				</div><br>
+				<div style="margin-left: 34%; width: 35%;" class="nad-input">
+					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
 				</div>
 			</form>
 		</div>
