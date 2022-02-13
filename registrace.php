@@ -3,15 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Auschwitz</title>
+	<title>Registrace</title>
 	<link rel="stylesheet" href="velkavalka.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script
-     src="https://code.jquery.com/jquery-3.6.0.min.js"
-     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-     crossorigin="anonymous"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<link rel="icon" href ="icon.png" type="image/x-icon">
 </head>
 <body>
@@ -34,25 +31,21 @@
 
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-
-				
-
 				<a href="jmennyseznam.html">Jmenný seznam</a>
-
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="kolaps">
 				<div class="col-md-12 kolapsnabid">
-					<a href="">Fotogalerie</a>
+					<a href="fotogalerie.html">Fotogalerie</a>
 				</div>
 			</div>	
 		</div>
-		
+
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-				<a href="prihlaseni.html">Přihlášení</a>
+				<a href="prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
 			</div>
 		</div>
 	</div>
@@ -72,21 +65,6 @@
    		}
  	  });
 	}
-
-	function initMap() {
-	
-	const tabor = { lat: 50.036, lng: 19.185 };
-   
-	const map = new google.maps.Map(document.getElementById("map"), {
-	  zoom: 4,
-	  center: tabor,
-	});
-	
-	const marker = new google.maps.Marker({
-	  position: tabor,
-	  map: map,
-	});
-  	}
 	</script>
 
 	<!-- Ikona -->
@@ -105,55 +83,102 @@
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="jmennyseznam.html">Jmenný seznam</a>
+					<a href="zajimavosti.html">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
 					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
 						<div class="drpdwn-menu">
-							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
-							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
-							<a href="file:///C:/Users/werne/Desktop/Velká%20válka/fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
+							<a href="fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
+							<a href="fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
+							<a href="fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
 						</div>
 				</li>
 				<li class="prihlaseni">
-					<a href="prihlaseni.html">Přihlášení</a>
+					<a href="prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
 				</li>
 			</ul>
 		</div>
 	</div>		
 </header>
 
-<section>
-	<!-- Index obrázek pro mobily -->
-	<div class="index-obr-maly"></div>
-	<!-- Index obrázek pro větší obrazovky -->
-	<div class="index-obr-velky"></div>
+<section class="registrace-sm">
+	<div style="background-color: #242424; height: 700px;">
+		<div style="padding: 2.5%;">
+			<h3 style="color: #e6e6e6;">Registrace</h3><br>
+			<form>
+				<div class="nad-input">
+					<label for="jmapri">Jméno a příjmení:</label>
+				</div>
+				<div>
+					<input type="text" name="jmapri" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label class="nad-input">Přezdívka:</label>
+				</div>
+				<div>
+					<input type="text" name="prezdivka" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo:</label>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo znovu:</label>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div><br><br>
+				<div>
+					<button type="submit" class="odesl-tlac-sm">Odeslat</button>
+				</div><br>
+				<div class="nad-input">
+					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
+				</div>
+			</form>
+		</div>
+	</div>
 </section>
 
-<section>
-	<!-- Hlavní sekce -->
-	<div class="mainsection pt-3">
-		<div class="container">
-			<h4 style="color: white;">Auschwitz</h4>
-			<p><strong>Stručný souhrn</strong></p>
-
-			<p><strong>Auschwitz</strong> byl komplex německých nacistických koncentračních a vyhlazovacích táborů fungujících během druhé světové války na území anektovaném Třetí říší na jihozápadě Polska po jeho obsazení roku 1939. Nachází se v Osvětimi v Malopolském vojvodství v Polsku.</p>
-
-			<div class="obrazek-text">
-				<div id="map"></div>
-				<div style="background-color: #999999; color: #ffffff; text-align: center; border-radius: 0px 0px 10px 10px;">
-					Auschwitz na mapě
+<section class="registrace-lg">
+	<div style="background-color: #242424; height: 775px; padding-top: 100px;">
+		<div class="prihlas-box">
+			<h3 style="color: #e6e6e6;">Registrace</h3>
+			<form>
+				<div class="nad-input">
+					<label for="jmapri">Jméno a příjmení:</label>
 				</div>
-			</div>
-
-			<p>Koncentrační tábor Auschwitz sestával ze tří oddělených táborů, které byly římskými číslicemi označeny jako Auschwitz I, II a III. Auschwitz I, jenž byl původním koncentračním táborem, sloužil jako administrativní centrum celého komplexu a za dobu jeho existence v něm nalezlo smrt na 70 tisíc lidí, převážně etnických Poláků a sovětských válečných zajatců. Auschwitz II (Birkenau) byl vyhlazovacím táborem, ve kterém zemřelo nejméně 960 tisíc Židů, 75 tisíc Poláků a přibližně 19 tisíc Romů. Birkenau byl největším nacistickým vyhlazovacím táborem. Auschwitz III (Monowitz) sloužil jako pracovní tábor společnosti Buna-Werke.</p>
-
-			<p>Mimo hlavní tři tábory existovalo přibližně 40 pobočných táborů, z nichž se některé nacházely až desítky kilometrů od hlavních táborů, jejichž obsazenost se pohybovala od několika desítek po několik tisíc osob.</p>
-
-			<a href="historie.html" style="color: #0ea30e;">Více se ale dozvíte zde.</a>
-
+				<div>
+					<input type="text" name="jmapri" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label class="nad-input">Přezdívka:</label>
+				</div>
+				<div>
+					<input type="text" name="prezdivka" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo:</label>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div>
+				<div class="nad-input">
+					<label for="heslo">Heslo znovu:</label>
+				</div>
+				<div>
+					<input type="password" name="heslo" class="prezdivka-input">
+				</div><br><br>
+				<div>
+					<button type="submit" class="odesl-tlac-lg">Odeslat</button>
+				</div><br>
+				<div style="margin-left: 34%; width: 35%;" class="nad-input">
+					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
+				</div>
+			</form>
 		</div>
-	</div>	
+	</div>
 </section>
 
 <section>
@@ -236,8 +261,28 @@
 		</div>
 </footer>
 
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2hdYGNaGp7YqyCeoEJ_ZdMQcs9pOktpQ&callback=initMap">
-</script>
+<?php
+    if(isset($_POST["odeslat"])) {
+        $username = $_POST["prezdivka"];
+        $password = $_POST["heslo"];
+
+        $mysqli = new mysqli("localhost", "root", "", "databasse");
+        if($mysqli->connect_error) {
+            die("Verbindung zur Datenbank fehlgeschlagen");
+        }
+        $sql = "";
+        $sql = "INSERT INTO users (username, password) VALUES ('$username', $password)";
+        
+
+        
+        $res = $mysqli->query($sql);
+        if($res === TRUE) {
+            echo "Hinzugefügt!";
+        } else {
+            echo $mysqli->error;
+        }
+    }
+
+?>
 </body>
 </html>
