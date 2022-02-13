@@ -83,7 +83,7 @@
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="zajimavosti.html">Jmenný seznam</a>
+					<a href="jmennyseznam.php">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
 					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
@@ -171,7 +171,7 @@
 					<input type="password" name="heslo" class="prezdivka-input">
 				</div><br><br>
 				<div>
-					<button type="submit" class="odesl-tlac-lg">Odeslat</button>
+					<button type="submit" class="odesl-tlac-lg" name="odeslat">Odeslat</button>
 				</div><br>
 				<div style="margin-left: 34%; width: 35%;" class="nad-input">
 					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>

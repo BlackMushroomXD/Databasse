@@ -139,10 +139,9 @@
 						<label for="prid-MestBydl">Město před přesídlením</label>
 						<input type="text" id="prid-MestBydl" class="prid-Inputy" name="mesto" placeholder="Praha"><br>
 					</div>
-					<div style="width: 50%; float: right;">
-						<label for="prid-Trans">Transport</label><br>
-						<input type="number" id="prid-Trans" class="prid-Inputy" name="transport" placeholder="max. 999" max="999"><br>
-					</div>
+					<div>
+                        <input type="submit" name="odeslat" value="Odeslat">
+                    </div>
 				</form>
 			</div>
 		</div>
@@ -235,25 +234,24 @@
         $vek = $_POST["vek"];
 		$pohlavi = $_POST["pohlavi"];
 		$mesto = $_POST["mesto"];
-		$transport = $_POST["transport"];
 
         $mysqli = new mysqli("localhost", "root", "", "databasse");
         if($mysqli->connect_error) {
-            die("Verbindung zur Datenbank fehlgeschlagen");
+            die("Nepovedlo se zapsat do databáze");
         }
         $sql = "";
         if($pohlavi = "Muž") {
-            $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, město, transport) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto', $transport)";
+            $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
         }if($pohlavi = "Žena") {
-            $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, město, transport) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto', $transport)";
+            $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
         } else {
-            $sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, město, transport) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto', $transport)";
+            $sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
         }
 
         
         $res = $mysqli->query($sql);
         if($res === TRUE) {
-            echo "Hinzugefügt!";
+            echo "Povedlo Se!";
         } else {
             echo $mysqli->error;
         }
