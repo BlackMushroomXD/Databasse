@@ -443,3 +443,10 @@
 	font-size: 12px;
 }
 
+.prid-Inputy {
+	border-color: white;
+	box-shadow: none;
+	background-color: white;
+	outline-style: none;
+	outline-color: white;
+}
