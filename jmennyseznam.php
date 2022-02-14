@@ -257,6 +257,62 @@
         }
     }
 
+	$mysqli = new mysqli("localhost", "root", "", "databasse");
+        if($mysqli->connect_error) {
+            die("Nepodařilo se připojit k DB");
+        }
+
+        $sql_female = "SELECT * FROM udaje_female";
+        $res = $mysqli->query($sql_female);
+        if($res !== FALSE) {
+            while($row = $res->fetch_assoc()) {
+                echo "<div class='item'>";
+                echo "<form method='POST' action='delete.php'>";
+                echo $row["jmeno"] . "<br>";
+                echo $row["prijmeni"] . "<br>";
+                echo $row["vek"] . "<br>";
+				echo $row["mesto"];
+                echo "</form>";
+                echo "</div>";
+            }
+        } else {
+            echo $mysqli->error;
+        }
+
+		$sql_male = "SELECT * FROM udaje_male";
+        $res = $mysqli->query($sql_male);
+        if($res !== FALSE) {
+            while($row = $res->fetch_assoc()) {
+                echo "<div class='item'>";
+                echo "<form method='POST' action='delete.php'>";
+                echo $row["jmeno"] . "<br>";
+                echo $row["prijmeni"] . "<br>";
+                echo $row["vek"] . "<br>";
+				echo $row["mesto"];
+                echo "</form>";
+                echo "</div>";
+            }
+        } else {
+            echo $mysqli->error;
+        }
+
+		$sql_child = "SELECT * FROM udaje_child";
+        $res = $mysqli->query($sql_child);
+        if($res !== FALSE) {
+            while($row = $res->fetch_assoc()) {
+                echo "<div class='item'>";
+                echo "<form method='POST' action='delete.php'>";
+                echo $row["jmeno"] . "<br>";
+                echo $row["prijmeni"] . "<br>";
+                echo $row["vek"] . "<br>";
+				echo $row["mesto"];
+                echo "</form>";
+                echo "</div>";
+            }
+        } else {
+            echo $mysqli->error;
+        }
+
 ?>
 </body>
 </html>
