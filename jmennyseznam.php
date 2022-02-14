@@ -115,27 +115,27 @@
 			<div style="background-color: white; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px;">
 				<h3>Přidání osoby</h3>
 				<p style="font-size: x-small;">(Zde přidáte člena, který není v naší databázi)</p><br>
-				<form method="POST">
-					<div style="width: 50%; float: left;">
+				<form method="post">
+					<div id="prid-Data_left">
 						<label for="prid-Jm">Jméno</label><br>
 						<input type="text" id="prid-Jm" class="prid-Inputy" name="jmeno" placeholder="Jan"><br>
 					</div>
-					<div style="width: 50%; float: right;">
+					<div id="prid-Data_right">
 						<label for="prid-Prijm">Příjmení</label><br>
 						<input type="text" id="prid-Prijm" class="prid-Inputy" name="prijmeni" placeholder="Novák"><br>
 					</div>
-					<div style="width: 50%; float: left;">
+					<div id="prid-Data_left">
 						<label for="prid-Vek">Věk</label><br>
 						<input type="number" id="prid-Vek" name="vek" class="prid-Inputy"><br>
 					</div>
-					<div style="width: 50%; float: right;">
+					<div id="prid-Data_right">
 						<label for="prid-Pohl">Pohlaví</label><br>
-						<input type="radio" id="prid-Pohl_muz" name="pohlavi" value="Muž">
-						<label for="prid-Pohl_muz">Muž</label>
-						<input type="radio" id="prid-Pohl_zena" name="pohlavi" value="Žena">
+						<input type="radio" id="prid-Pohl_muz" name="pohlavi" value="MUZ">
+						<label for="prid-Pohl_muz">Muž</label><br>
+						<input type="radio" id="prid-Pohl_zena" name="pohlavi" value="ZENA">
 						<label for="prid-Pohl_zena">Žena</label><br>
 					</div>
-					<div style="width: 50%; float: left;">
+					<div id="prid-Data_left">
 						<label for="prid-MestBydl">Město před přesídlením</label>
 						<input type="text" id="prid-MestBydl" class="prid-Inputy" name="mesto" placeholder="Praha"><br>
 					</div>
@@ -235,12 +235,12 @@
 		$pohlavi = $_POST["pohlavi"];
 		$mesto = $_POST["mesto"];
 
-        $mysqli = new mysqli("localhost", "root", "", "databasse");
+        $mysqli = new mysqli("localhost", "root", "", "wea_databasse");
         if($mysqli->connect_error) {
             die("Nepovedlo se zapsat do databáze");
         }
         $sql = "";
-        if($pohlavi = "Muž") {
+        if($pohlavi = "MUZ") {
             $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
         }else if($pohlavi = "Žena") {
             $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
