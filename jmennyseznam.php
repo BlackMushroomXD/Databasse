@@ -242,7 +242,7 @@
         $sql = "";
         if($pohlavi = "Muž") {
             $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
-        }if($pohlavi = "Žena") {
+        }else if($pohlavi = "Žena") {
             $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
         } else {
             $sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
