@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registrace</title>
+	<title>Seznam jmen</title>
 	<link rel="stylesheet" href="velkavalka.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -96,82 +96,111 @@
 	</div>		
 </header>
 
-<section class="registrace-sm">
-	<div style="background-color: #242424; height: 700px;">
-		<div style="padding: 2.5%;">
-			<h3 style="color: #e6e6e6;">Registrace</h3><br>
-			<form>
-				<div class="nad-input">
-					<label for="jmapri">Jméno a příjmení:</label>
-				</div>
-				<div>
-					<input type="text" name="jmapri" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label class="nad-input">Přezdívka:</label>
-				</div>
-				<div>
-					<input type="text" name="prezdivka" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label for="heslo">Heslo:</label>
-				</div>
-				<div>
-					<input type="password" name="heslo" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label for="heslo">Heslo znovu:</label>
-				</div>
-				<div>
-					<input type="password" name="heslo" class="prezdivka-input">
-				</div><br><br>
-				<div>
-					<button type="submit" class="odesl-tlac-sm">Odeslat</button>
-				</div><br>
-				<div class="nad-input">
-					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
-				</div>
-			</form>
-		</div>
-	</div>
+<section>
+	<!-- Obrázek pro mobily -->
+	<div class="zajimavosti-obr-maly"></div>
+	<!-- Obrázek pro větší obrazovky -->
+	<div class="zajimavosti-obr-velky"></div>
 </section>
 
-<section class="registrace-lg">
-	<div style="background-color: #242424; height: 775px; padding-top: 100px;">
-		<div class="prihlas-box">
-			<h3 style="color: #e6e6e6;">Registrace</h3>
-			<form>
-				<div class="nad-input">
-					<label for="jmapri">Jméno a příjmení:</label>
-				</div>
-				<div>
-					<input type="text" name="jmapri" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label class="nad-input">Přezdívka:</label>
-				</div>
-				<div>
-					<input type="text" name="prezdivka" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label for="heslo">Heslo:</label>
-				</div>
-				<div>
-					<input type="password" name="heslo" class="prezdivka-input">
-				</div>
-				<div class="nad-input">
-					<label for="heslo">Heslo znovu:</label>
-				</div>
-				<div>
-					<input type="password" class="prezdivka-input">
-				</div><br><br>
-				<div>
-					<button type="submit" class="odesl-tlac-lg" name="odeslat">Odeslat</button>
-				</div><br>
-				<div style="margin-left: 34%; width: 35%;" class="nad-input">
-					<a href="prihlaseni.html?prezdivka=&heslo=">Máte účet? Přihlaste se</a>
-				</div>
-			</form>
+<section>
+	<!-- Hlavní sekce -->
+	<div class="mainsection pt-3" style="padding: 100px 0 100px 0;">
+		<div class="container">
+			<div style="background-color: #414141;; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px; height: 500px;">
+				<h3 style="color: #e6e6e6">Přidání osoby do naší návštevní databáze</h3>
+				<p style="font-size: x-small; color: #e6e6e6">(Tato databáze slouží jako návštěvní kniha)</p><br>
+				<form method="post" style="color: #e6e6e6;">
+					<div id="prid-Data_left">
+						<label for="prid-Jm">Jméno</label><br>
+						<input type="text" id="prid-Jm" class="prid-Inputy" name="jmeno" placeholder="Jan"><br>
+					</div>
+					<div id="prid-Data_right">
+						<label for="prid-Prijm">Příjmení</label><br>
+						<input type="text" id="prid-Prijm" class="prid-Inputy" name="prijmeni" placeholder="Novák"><br>
+					</div>
+					<div id="prid-Data_left">
+						<label for="prid-Vek">Věk</label><br>
+						<input type="number" id="prid-Vek" name="vek" class="prid-Inputy"><br>
+					</div>
+					<div id="prid-Data_right">
+						<label for="prid-Pohl">Pohlaví</label><br>
+						<input type="radio" id="prid-Pohl_muz" name="pohlavi" value="MUZ">
+						<label for="prid-Pohl_muz">Muž</label><br>
+						<input type="radio" id="prid-Pohl_zena" name="pohlavi" value="ZENA">
+						<label for="prid-Pohl_zena">Žena</label><br>
+					</div>
+					<div id="prid-Data_left">
+						<label for="prid-MestBydl">Město před přesídlením</label>
+						<input type="text" id="prid-MestBydl" class="prid-Inputy" name="mesto" placeholder="Praha"><br>
+					</div>
+					<div>
+                        <input type="submit" class="odesl-tlac-lg" name="odeslat" value="Odeslat">
+                    </div>
+				</form>
+			</div>
+
+			
+		<div class="vypis">
+			<?php
+			
+				$mysqli = new mysqli("localhost", "root", "", "databasse");
+				if($mysqli->connect_error) {
+					die("Nepodařilo se připojit k DB");
+				}
+
+				$sql_female = "SELECT * FROM customudaje_female";
+				$res = $mysqli->query($sql_female);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+
+				$sql_male = "SELECT * FROM customudaje_male";
+				$res = $mysqli->query($sql_male);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+
+				$sql_other = "SELECT * FROM customudaje_other";
+				$res = $mysqli->query($sql_other);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+			?>
+		</div>
 		</div>
 	</div>
 </section>
@@ -255,29 +284,37 @@
 			</div>
 		</div>
 </footer>
-
 <?php
-    if(isset($_POST["odeslat"])) {
-        $username = $_POST["prezdivka"];
-        $password = $_POST["heslo"];
+	if(isset($_POST["odeslat"])) {
+        $jmeno = $_POST["jmeno"];
+        $prijmeni = $_POST["prijmeni"];
+        $vek = $_POST["vek"];
+		$pohlavi = $_POST["pohlavi"];
+		$mesto = $_POST["mesto"];
 
         $mysqli = new mysqli("localhost", "root", "", "databasse");
         if($mysqli->connect_error) {
-            die("Nepodařilo se připojit k DB");
+            die("Nepovedlo se zapsat do databáze");
         }
         $sql = "";
-        $sql = "INSERT INTO users (username, password) VALUES ('$username', $password)";
-        
+        if($pohlavi = "MUZ") {
+            $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
+
+        }else if($pohlavi = "ZENA") {
+            $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
+        } else {
+            $sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
+        }
 
         
         $res = $mysqli->query($sql);
         if($res === TRUE) {
-            echo "Povedlo se!";
+            echo "Povedlo Se!";
         } else {
             echo $mysqli->error;
         }
     }
 
-?>
+?>	
 </body>
 </html>

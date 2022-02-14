@@ -466,3 +466,8 @@
 	margin: 10px 0 10px 0;
 }
 
+.item{
+	border: 1px solid white;
+	padding: 2px;
+}
+
