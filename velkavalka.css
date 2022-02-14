@@ -450,3 +450,13 @@
 	outline-style: none;
 	outline-color: white;
 }
+
+#prid-Data_left{
+	width: 50%;
+	float: left;
+}
+
+#prid-Data_right{
+	width: 50%;
+	float: right;
+}
