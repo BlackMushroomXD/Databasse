@@ -31,7 +31,7 @@
 
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-				<a href="jmennyseznam.html">Jmenný seznam</a>
+				<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
 			</div>
 		</div>
 
@@ -83,7 +83,7 @@
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="jmennyseznam.html">Jmenný seznam</a>
+					<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
 					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
@@ -110,12 +110,12 @@
 
 <section>
 	<!-- Hlavní sekce -->
-	<div class="mainsection pt-3">
+	<div class="mainsection pt-3" style="padding: 100px 0 100px 0;">
 		<div class="container">
-			<div style="background-color: white; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px;">
-				<h3>Přidání osoby</h3>
-				<p style="font-size: x-small;">(Zde přidáte člena, který není v naší databázi)</p><br>
-				<form method="post">
+			<div style="background-color: #414141;; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px; height: 500px;">
+				<h3 style="color: #e6e6e6">Přidání osoby</h3>
+				<p style="font-size: x-small; color: #e6e6e6">(Zde přidáte člena, který není v naší databázi)</p><br>
+				<form method="post" style="color: #e6e6e6;">
 					<div id="prid-Data_left">
 						<label for="prid-Jm">Jméno</label><br>
 						<input type="text" id="prid-Jm" class="prid-Inputy" name="jmeno" placeholder="Jan"><br>
@@ -140,10 +140,71 @@
 						<input type="text" id="prid-MestBydl" class="prid-Inputy" name="mesto" placeholder="Praha"><br>
 					</div>
 					<div>
-                        <input type="submit" name="odeslat" value="Odeslat">
+                        <input type="submit" class="odesl-tlac-lg" name="odeslat" value="Odeslat">
                     </div>
 				</form>
 			</div>
+
+			
+
+			<?php
+			
+				$mysqli = new mysqli("localhost", "root", "", "wea_databasse");
+				if($mysqli->connect_error) {
+					die("Nepodařilo se připojit k DB");
+				}
+
+				$sql_female = "SELECT * FROM udaje_female";
+				$res = $mysqli->query($sql_female);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+
+				$sql_male = "SELECT * FROM udaje_male";
+				$res = $mysqli->query($sql_male);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+
+				$sql_child = "SELECT * FROM udaje_child";
+				$res = $mysqli->query($sql_child);
+				if($res !== FALSE) {
+					while($row = $res->fetch_assoc()) {
+						echo "<div class='item'>";
+						echo "<form method='POST' action='delete.php'>";
+						echo $row["jmeno"] . "<br>";
+						echo $row["prijmeni"] . "<br>";
+						echo $row["vek"] . "<br>";
+						echo $row["mesto"];
+						echo "</form>";
+						echo "</div>";
+					}
+				} else {
+					echo $mysqli->error;
+				}
+			?>
 		</div>
 	</div>
 </section>
@@ -258,62 +319,6 @@
         }
     }
 
-	$mysqli = new mysqli("localhost", "root", "", "databasse");
-        if($mysqli->connect_error) {
-            die("Nepodařilo se připojit k DB");
-        }
-
-        $sql_female = "SELECT * FROM udaje_female";
-        $res = $mysqli->query($sql_female);
-        if($res !== FALSE) {
-            while($row = $res->fetch_assoc()) {
-                echo "<div class='item'>";
-                echo "<form method='POST' action='delete.php'>";
-                echo $row["jmeno"] . "<br>";
-                echo $row["prijmeni"] . "<br>";
-                echo $row["vek"] . "<br>";
-				echo $row["mesto"];
-                echo "</form>";
-                echo "</div>";
-            }
-        } else {
-            echo $mysqli->error;
-        }
-
-		$sql_male = "SELECT * FROM udaje_male";
-        $res = $mysqli->query($sql_male);
-        if($res !== FALSE) {
-            while($row = $res->fetch_assoc()) {
-                echo "<div class='item'>";
-                echo "<form method='POST' action='delete.php'>";
-                echo $row["jmeno"] . "<br>";
-                echo $row["prijmeni"] . "<br>";
-                echo $row["vek"] . "<br>";
-				echo $row["mesto"];
-                echo "</form>";
-                echo "</div>";
-            }
-        } else {
-            echo $mysqli->error;
-        }
-
-		$sql_child = "SELECT * FROM udaje_child";
-        $res = $mysqli->query($sql_child);
-        if($res !== FALSE) {
-            while($row = $res->fetch_assoc()) {
-                echo "<div class='item'>";
-                echo "<form method='POST' action='delete.php'>";
-                echo $row["jmeno"] . "<br>";
-                echo $row["prijmeni"] . "<br>";
-                echo $row["vek"] . "<br>";
-				echo $row["mesto"];
-                echo "</form>";
-                echo "</div>";
-            }
-        } else {
-            echo $mysqli->error;
-        }
-
-?>
+?>	
 </body>
 </html>
