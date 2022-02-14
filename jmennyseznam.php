@@ -15,7 +15,7 @@
 
 <header class="hlava">
 <!-- Menu pro mobil -->
-	<div class="kolaps">
+<div class="kolaps">
 			<div class="mobilmenu"> 
 				<div class="menuicon"></div>
 				<div class="menuicon"></div>
@@ -31,21 +31,21 @@
 
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-				<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
+				<a href="jmennyseznam.php">Jmenný seznam</a>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="kolaps">
 				<div class="col-md-12 kolapsnabid">
-					<a href="fotogalerie.html">Fotogalerie</a>
+					<a href="komunitniseznam.php">Komunitní Seznam</a>
 				</div>
 			</div>	
 		</div>
 
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-				<a href="prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+				<a href="prihlaseni.html">Přihlášení</a>
 			</div>
 		</div>
 	</div>
@@ -77,24 +77,19 @@
 	
 
 	<!-- Header pro PC -->
-		<div class="menu">
+	<div class="menu">
 			<ul id="headerseznam">
 				<li>
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
+					<a href="jmennyseznam.php">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
-					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
-						<div class="drpdwn-menu">
-							<a href="fot-zbrane.html" class="drpdwn-nabidka1">Zbraně</a>
-							<a href="fot-bitvy.html" class="drpdwn-nabidka2">Bitvy</a>
-							<a href="fot_vyznos.html" class="drpdwn-nabidka3">Významné osoby</a>
-						</div>
+					<a href="komunitniseznam.php">Komunitní Seznam</a>
 				</li>
 				<li class="prihlaseni">
-					<a href="prihlaseni.html?prezdivka=&heslo=">Přihlášení</a>
+					<a href="prihlaseni.html">Přihlášení</a>
 				</li>
 			</ul>
 		</div>
@@ -146,10 +141,10 @@
 			</div>
 
 			
-
+		<div>
 			<?php
 			
-				$mysqli = new mysqli("localhost", "root", "", "wea_databasse");
+				$mysqli = new mysqli("localhost", "root", "", "databasse");
 				if($mysqli->connect_error) {
 					die("Nepodařilo se připojit k DB");
 				}
@@ -205,6 +200,7 @@
 					echo $mysqli->error;
 				}
 			?>
+		</div>
 		</div>
 	</div>
 </section>
