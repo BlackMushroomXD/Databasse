@@ -139,14 +139,9 @@
 						<label for="prid-MestBydl">Město před přesídlením</label>
 						<input type="text" id="prid-MestBydl" class="prid-Inputy" name="mesto" placeholder="Praha"><br>
 					</div>
-					<div id="prid-Data_right">
-						<label for="prid-Trans">Transport</label><br>
-						<input type="number" id="prid-Trans" class="prid-Inputy" name="transport" placeholder="max. 999" max="999"><br>
-					</div>
-
 					<div>
-						<input type="submit" name="odeslat" value="Odeslat">
-					</div>
+                        <input type="submit" name="odeslat" value="Odeslat">
+                    </div>
 				</form>
 			</div>
 		</div>
@@ -239,11 +234,10 @@
         $vek = $_POST["vek"];
 		$pohlavi = $_POST["pohlavi"];
 		$mesto = $_POST["mesto"];
-		//$transport = $_POST["transport"];
 
         $mysqli = new mysqli("localhost", "root", "", "wea_databasse");
         if($mysqli->connect_error) {
-            die("Verbindung zur Datenbank fehlgeschlagen");
+            die("Nepovedlo se zapsat do databáze");
         }
         $sql = "";
         if($pohlavi = "MUZ") {
@@ -257,7 +251,7 @@
         
         $res = $mysqli->query($sql);
         if($res === TRUE) {
-            echo "Hinzugefügt!";
+            echo "Povedlo Se!";
         } else {
             echo $mysqli->error;
         }
