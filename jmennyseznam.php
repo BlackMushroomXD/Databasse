@@ -141,7 +141,7 @@
 			</div>
 
 			
-		<div>
+		<div class="vypis">
 			<?php
 			
 				$mysqli = new mysqli("localhost", "root", "", "databasse");

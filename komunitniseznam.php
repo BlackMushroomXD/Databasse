@@ -108,8 +108,8 @@
 	<div class="mainsection pt-3" style="padding: 100px 0 100px 0;">
 		<div class="container">
 			<div style="background-color: #414141;; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px; height: 500px;">
-				<h3 style="color: #e6e6e6">Přidání osoby</h3>
-				<p style="font-size: x-small; color: #e6e6e6">(Zde přidáte člena, který není v naší databázi)</p><br>
+				<h3 style="color: #e6e6e6">Přidání osoby do naší návštevní databáze</h3>
+				<p style="font-size: x-small; color: #e6e6e6">(Tato databáze slouží jako návštěvní kniha)</p><br>
 				<form method="post" style="color: #e6e6e6;">
 					<div id="prid-Data_left">
 						<label for="prid-Jm">Jméno</label><br>
@@ -141,10 +141,10 @@
 			</div>
 
 			
-		<div>
+		<div class="vypis">
 			<?php
 			
-				$mysqli = new mysqli("localhost", "root", "", "wea_databasse");
+				$mysqli = new mysqli("localhost", "root", "", "databasse");
 				if($mysqli->connect_error) {
 					die("Nepodařilo se připojit k DB");
 				}
