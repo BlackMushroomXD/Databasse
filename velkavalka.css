@@ -112,7 +112,7 @@
 		float: right;
 	}
 
-	.index-obr-velky {
+	.index-obr-maly {
 		background-image: url("indexobr.jpg");
 		background-color: #000000;
 		width: 100%;
@@ -444,9 +444,21 @@
 }
 
 .prid-Inputy {
-	border-color: white;
-	box-shadow: none;
-	background-color: white;
-	outline-style: none;
-	outline-color: white;
+	width: 75%;
+	background-color: #383838;
+	border-radius: 5px;
+	border: 0.5px solid #101010;
+	height: 45px;
+	color: #e6e6e6;
+	font-size: 20px;
+}
+
+#prid-Data_left{
+	width: 50%;
+	float: left;
+}
+
+#prid-Data_right{
+	width: 50%;
+	float: right;
 }
