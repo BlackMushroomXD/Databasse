@@ -31,7 +31,7 @@
 
 		<div class="row">
 			<div class="col-md-12 kolapsnabid">
-				<a href="jmennyseznam.html">Jmenný seznam</a>
+				<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
 			</div>
 		</div>
 
@@ -83,7 +83,7 @@
 					<a href="historie.html">Historie</a>
 				</li>
 				<li>
-					<a href="jmennyseznam.php">Jmenný seznam</a>
+					<a href="http://localhost/werne/Test/jmennyseznam.php">Jmenný seznam</a>
 				</li>
 				<li class="drpdwn">
 					<a href="fotogalerie.html" class="drpdwn-tlac">Fotogalerie</a>
@@ -266,7 +266,7 @@
         $username = $_POST["prezdivka"];
         $password = $_POST["heslo"];
 
-        $mysqli = new mysqli("localhost", "root", "", "databasse");
+        $mysqli = new mysqli("localhost", "root", "", "wea_databasse");
         if($mysqli->connect_error) {
             die("Verbindung zur Datenbank fehlgeschlagen");
         }
