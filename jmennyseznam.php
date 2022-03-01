@@ -10,6 +10,9 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<link rel="icon" href ="icon.png" type="image/x-icon">
+
+
+	
 </head>
 <body>
 
@@ -105,8 +108,9 @@
 
 <section>
 	<!-- Hlavní sekce -->
-	<div class="mainsection pt-3" style="padding: 100px 0 100px 0;">
+	<div class="mainsection pt-3" style="padding: 100px 0 100px 0; height: 3000px">
 		<div class="container">
+			<div id="imgVezni"></div>
 			<div style="background-color: #414141;; float: right; width: 65%; color: black; border-radius: 15px; padding: 10px; height: 500px;">
 				<h3 style="color: #e6e6e6">Přidání osoby</h3>
 				<p style="font-size: x-small; color: #e6e6e6">(Zde přidáte člena, který není v naší databázi)</p><br>
@@ -139,69 +143,62 @@
                     </div>
 				</form>
 			</div>
-
 			
-		<div class="vypis">
-			<?php
-			
-				$mysqli = new mysqli("localhost", "root", "", "databasse");
-				if($mysqli->connect_error) {
-					die("Nepodařilo se připojit k DB");
-				}
-
-				$sql_female = "SELECT * FROM udaje_female";
-				$res = $mysqli->query($sql_female);
-				if($res !== FALSE) {
-					while($row = $res->fetch_assoc()) {
-						echo "<div class='item'>";
-						echo "<form method='POST' action='delete.php'>";
-						echo $row["jmeno"] . "<br>";
-						echo $row["prijmeni"] . "<br>";
-						echo $row["vek"] . "<br>";
-						echo $row["mesto"];
-						echo "</form>";
-						echo "</div>";
+		
+			<div class="vypis">
+				<?php
+				
+					$mysqli = new mysqli("localhost", "root", "", "wea_databasse");
+					if($mysqli->connect_error) {
+						die("Nepodařilo se připojit k DB");
 					}
-				} else {
-					echo $mysqli->error;
-				}
 
-				$sql_male = "SELECT * FROM udaje_male";
-				$res = $mysqli->query($sql_male);
-				if($res !== FALSE) {
-					while($row = $res->fetch_assoc()) {
-						echo "<div class='item'>";
-						echo "<form method='POST' action='delete.php'>";
-						echo $row["jmeno"] . "<br>";
-						echo $row["prijmeni"] . "<br>";
-						echo $row["vek"] . "<br>";
-						echo $row["mesto"];
-						echo "</form>";
-						echo "</div>";
+					$sql_female = "SELECT * FROM udaje_female";
+					$res = $mysqli->query($sql_female);
+					if($res !== FALSE) {
+						while($row = $res->fetch_assoc()) {
+							echo "<div class='item'>";
+							echo $row["jmeno"] . " ";
+							echo $row["prijmeni"] . "<br>";
+							echo $row["vek"] . "<br>";
+							echo $row["mesto"];
+							echo "</div>";
+						}
+					} else {
+						echo $mysqli->error;
 					}
-				} else {
-					echo $mysqli->error;
-				}
 
-				$sql_child = "SELECT * FROM udaje_child";
-				$res = $mysqli->query($sql_child);
-				if($res !== FALSE) {
-					while($row = $res->fetch_assoc()) {
-						echo "<div class='item'>";
-						echo "<form method='POST' action='delete.php'>";
-						echo $row["jmeno"] . "<br>";
-						echo $row["prijmeni"] . "<br>";
-						echo $row["vek"] . "<br>";
-						echo $row["mesto"];
-						echo "</form>";
-						echo "</div>";
+					$sql_male = "SELECT * FROM udaje_male";
+					$res = $mysqli->query($sql_male);
+					if($res !== FALSE) {
+						while($row = $res->fetch_assoc()) {
+							echo "<div class='item respons-galerie'>";
+							echo $row["jmeno"] . " ";
+							echo $row["prijmeni"] . "<br>";
+							echo $row["vek"] . "<br>";
+							echo $row["mesto"];
+							echo "</div>";
+						}
+					} else {
+						echo $mysqli->error;
 					}
-				} else {
-					echo $mysqli->error;
-				}
-			?>
-		</div>
-		</div>
+
+					$sql_child = "SELECT * FROM udaje_child";
+					$res = $mysqli->query($sql_child);
+					if($res !== FALSE) {
+						while($row = $res->fetch_assoc()) {
+							echo "<div class='item'>";
+							echo $row["jmeno"];
+							echo $row["prijmeni"] . "<br>";
+							echo $row["vek"] . "<br>";
+							echo $row["mesto"];
+							echo "</div>";
+						}
+					} else {
+						echo $mysqli->error;
+					}
+				?>
+			</div>
 	</div>
 </section>
 
@@ -297,15 +294,17 @@
             die("Nepovedlo se zapsat do databáze");
         }
         $sql = "";
-        if($pohlavi = "MUZ") {
+
+        if($pohlavi == "MUZ") {
             $sql = "INSERT INTO udaje_male (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
 
-        }else if($pohlavi = "ZENA") {
+        }else{
             $sql = "INSERT INTO udaje_female (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
-        } else {
-            $sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
-        }
+		}
 
+		if($vek < 18){
+			$sql = "INSERT INTO udaje_child (jmeno, prijmeni, vek, mesto) VALUES ('$jmeno', '$prijmeni', $vek, '$mesto')";
+		}
         
         $res = $mysqli->query($sql);
         if($res === TRUE) {
